@@ -1,1 +1,1 @@
-web: gunicorn rbs2022.wsgi
+web: gunicorn rbs2022.wsgi:application
