@@ -1,0 +1,1 @@
+web: gunicorn rbs2022.wsgi
