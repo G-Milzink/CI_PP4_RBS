@@ -31,7 +31,7 @@ SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["rbs2022.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ['ci-pp4-rbs.herokuapp.com', "localhost"]
 
 
 # Application definition
