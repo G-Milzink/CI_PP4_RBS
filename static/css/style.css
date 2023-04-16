@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(42, 80, 98);
+    color: rgb(94, 94, 94);
+}
+
+.navbar {
+    color: rgb(94, 94, 94);
+}
+
+.card-styling {
+    background-color: rgb(58, 58, 58);
+    border-radius: 5px;
+}
+
+.card-styling, a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.card_margin {
+    margin: 10px;
+}
