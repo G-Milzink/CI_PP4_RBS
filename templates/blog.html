@@ -12,17 +12,18 @@
                 <div class="col-md-8">
                     <div class="card mb-8 card_margin">
                         <div class="card-body card-styling">
-                            <!-- <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
+                            <div class="image-container">
+                                {% if "placeholder" in post.image.url %}
                                 <img class="card-img-top"
                                     src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <p>bananen</p>
+                                <img class="card-img-top" src=" {{ post.image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     
                                 </div>
-                            </div> -->
+                            </div>
                             <p class="author">Author: {{ post.author }}</p>
                             <a href="#" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
