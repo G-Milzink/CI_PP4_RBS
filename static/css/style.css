@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 /* --- base.html --- */
+
+.logo {
+    max-width: 50px;
+}
+
 .banner {
     font-family: 'Dancing Script', cursive;
     font-size: 500%;
@@ -16,6 +21,7 @@ body {
 
 .navbar {
     color: rgb(94, 94, 94);
+    font-size: 200%;
 }
 
 /* --- blog.html --- */
