@@ -24,9 +24,10 @@ body {
     font-size: 200%;
 }
 
-/* --- blog.html --- */
+/* overall styling */
+
 .card-styling {
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(97, 98, 83);
     border-radius: 5px;
 }
 
@@ -34,6 +35,12 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.home_images {
+    min-width: 100%;
+}
+
+/* --- blog.html --- */
 
 a:hover {
     color: rgb(134, 134, 134);
