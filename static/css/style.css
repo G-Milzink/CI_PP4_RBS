@@ -1,11 +1,12 @@
+/* Google fonts: */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
+/* --- base.html --- */
 .banner {
     font-family: 'Dancing Script', cursive;
     font-size: 500%;
     color: bisque;
-    text-align: justify;
-    align-self: center;
+    text-align: center;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     color: rgb(94, 94, 94);
 }
 
+/* --- blog.html --- */
 .card-styling {
     background-color: rgb(58, 58, 58);
     border-radius: 5px;
