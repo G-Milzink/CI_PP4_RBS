@@ -16,7 +16,7 @@
 
 body {
     background-color: rgb(42, 80, 98);
-    color: rgb(94, 94, 94);
+    color: rgb(134, 134, 134);
 }
 
 .navbar {
@@ -37,7 +37,7 @@ body {
 }
 
 .home_images {
-    min-width: 100%;
+     width: 100%;
 }
 
 /* --- blog.html --- */
