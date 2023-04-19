@@ -46,18 +46,19 @@
               <li class="nav-item">
                 <a class="nav-link disabled">Contact</a>
               </li>
+              {% if user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link disabled">Register</a>
+                <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Login</a>
+                <a href="{% url 'account_login' %}" class="nav-link">Login</a>
               </li>
+              {% endif %}
             </ul>
-            <!-- disabled for now...perhaps usefull for the blog page? -->
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
       </nav>
