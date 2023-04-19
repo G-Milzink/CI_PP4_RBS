@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.views import generic
+from django.shortcuts import render, get_object_or_404
+from django.views import generic, View
 from django.core.paginator import Paginator
 from .models import Blogpost
 
@@ -11,9 +11,7 @@ class PostList(generic.ListView):
     paginate_by = 4
 
     def get(self, request, *args, **kwargs):
-        """
-        This view renders the blog page and also all published posts
-        """
+
         posts = Blogpost.objects.all()
         paginator = Paginator(Blogpost.objects.all(), 4)
         page = request.GET.get('page')
@@ -21,3 +19,24 @@ class PostList(generic.ListView):
 
         return render(
             request, 'blog.html',  {'posts': posts, 'post_list': post_list})
+
+
+class PostDetail(View):
+
+    def get(self, request, slug, *args, **kwargs):
+        queryset = Blogpost.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+        comments = post.comments.filter(approved=True).order_by('created_on')
+        liked = False
+        if post.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
+        return render(
+            request,
+            "post_detail.html",
+            {
+                "post": post,
+                "comments": comments,
+                "liked": liked
+            }
+        )
