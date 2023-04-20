@@ -1,4 +1,9 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
 <div class="col-12 mt-3 left">
     <div class="row d-flex justify-content-center">
         <div class="masthead">
@@ -54,13 +59,19 @@
                         <!-- Our for loop ends here -->
                         {% endfor %}
                     </div>
-                    <div class="row">
-                        <div class="col-md-8 card mb-4  mt-3 ">
-                            
-                        </div>
                         <div class="col-md-4 card mb-4  mt-3 ">
                             <div class="card-body">
-                                <!-- For later -->
+                                {% if user.is_authenticated %}
+
+                                    <h3>Leave a comment:</h3>
+                                    <p>Posting as: {{ user.username }}</p>
+                                    <form method="post"></form>
+                                        {{ comment_form | crispy }}
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-signup btn-lg" >Submit</button>
+                                    </form>
+
+                                {% endif %}
                             </div>
                         </div>
                     </div>
