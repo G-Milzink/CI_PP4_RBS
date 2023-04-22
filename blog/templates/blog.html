@@ -23,7 +23,9 @@
                                 <h2 class="card-title">{{ post.title }}</h2>
                             </a>
                             <p class="author">Author: {{ post.author }}</p>
-                            <p class="card-text">{{ post.excerpt }}</p>
+                            <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                                <p class="card-text">{{ post.excerpt }}</p>
+                            </a>
                             <hr />
                             <p class="card-text text-muted h4">{{ post.created_on}} <i class="fa-regular fa-heart"></i>
                                 {{ post.number_of_likes }}</p>
