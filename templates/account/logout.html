@@ -8,9 +8,10 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-
-      <h1>{% trans "Sign Out" %}</h1>
+    <div class="col-md-6 mt-3 offset-md-3 ">
+      <div class="card card-styling">
+        <div class="card-body">
+      <h1>{% trans "Log Out" %}</h1>
 
       <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
@@ -19,8 +20,10 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button type="submit">{% trans 'Sign Out' %}</button>
+        <button type="submit">{% trans 'Log Out' %}</button>
       </form>
+</div>
+</div>
 
     </div>
   </div>
