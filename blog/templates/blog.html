@@ -6,8 +6,8 @@
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
-            <div class="row d-flex justify-content-center">     
-            {% for post in post_list %}
+            <div class="row d-flex justify-content-center">
+                {% for post in post_list %}
                 <div class="col-md-8">
                     <div class="card mb-8 card_margin">
                         <div class="card-body card-styling">
@@ -26,22 +26,24 @@
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
+                            <p class="card-text text-muted h4">{{ post.created_on}} </p>
                             <hr />
                             {% if post.number_of_likes >= 1 %}
-                                <p class="card-text text-muted h4">{{ post.created_on}} <i class="fa-regular fa-heart fa-beat" style="color: #ff0000"></i>
-                                    {{ post.number_of_likes }}</p>
+                            <p class="card-text text-muted h4"><i class="fa-regular fa-heart"
+                                    style="color: #ff0000"></i>
+                                {{ post.number_of_likes }}</p>
                             {% else %}
-                                <p class="card-text text-muted h4">{{ post.created_on}} <i class="fa-regular fa-heart"></i>
-                                    {{ post.number_of_likes }}</p>
+                            <p class="card-text text-muted h4"><i class="fa-regular fa-heart"></i>
+                                {{ post.number_of_likes }}</p>
                             {% endif %}
                         </div>
                     </div>
                 </div>
-            {% if forloop.counter|divisibleby:1 %}
+                {% if forloop.counter|divisibleby:1 %}
             </div>
             <div class="row d-flex justify-content-center">
-            {% endif %}
-            {% endfor %}
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>

@@ -9,7 +9,6 @@
         <div class="col-md-8">
             <div class="card mb-8 card_margin">
                 <div class="card-body card-styling">
-
                     <div class="masthead">
                         <div class="container">
                             <div class="row g-0">
@@ -40,18 +39,21 @@
                                                         {% if liked %}
                                                         <button type="submit" name="blogpost_id" value="{{post.slug}}"
                                                             class="btn-like like_no_border">
-                                                            <i class="fa-solid fa-heart"></i>
+                                                            <i class="fa-regular fa-heart fa-beat" style="color: #ff0000"></i>
+                                                            {{ post.number_of_likes }}
                                                         </button>
                                                         {% else %}
                                                         <button type="submit" name="blogpost_id" value="{{post.slug}}"
                                                             class="btn-like like_no_border">
                                                             <i class="fa-regular fa-heart"></i>
+                                                            {{ post.number_of_likes }}
                                                         </button>
                                                         {% endif %}
                                                     </form>
                                                     {% else %}
                                                     <span class="text-secondary"><i class="fa-regular fa-heart"></i>
-                                                        {{post.likes}} </span>
+                                                        {{ post.number_of_likes }}
+                                                    </span>
                                                     {% endif %}
                                                 </strong>
                                             </div>
