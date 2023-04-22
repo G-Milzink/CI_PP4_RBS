@@ -50,3 +50,8 @@ a:hover {
 .card_margin {
     margin: 10px;
 }
+
+.like_no_border {
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
