@@ -11,15 +11,15 @@ class Contact(models.Model):
         on_delete=models.CASCADE,
         related_name="contact_user",
         null=True
-        )
+    )
     name = models.CharField(
-        max_length=50,
+        max_length=75,
         null=True
-        )
+    )
     email = models.EmailField(
         max_length=200,
         default=""
-        )
+    )
     message = models.TextField()
 
     class Meta:
