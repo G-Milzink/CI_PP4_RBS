@@ -17,7 +17,7 @@ class Contact(models.Model):
         null=True
         )
     email = models.EmailField(
-        max_length=254,
+        max_length=200,
         default=""
         )
     message = models.TextField()
