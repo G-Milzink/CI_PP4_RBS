@@ -26,14 +26,14 @@
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
-                            <p class="card-text text-muted h4">{{ post.created_on}} </p>
                             <hr />
+                            <p class="card-text text-muted h5">{{ post.created_on}} </p>
                             {% if post.number_of_likes >= 1 %}
-                            <p class="card-text text-muted h4"><i class="fa-regular fa-heart"
+                            <p class="card-text text-muted h5"><i class="fa-regular fa-heart"
                                     style="color: #ff0000"></i>
                                 {{ post.number_of_likes }}</p>
                             {% else %}
-                            <p class="card-text text-muted h4"><i class="fa-regular fa-heart"></i>
+                            <p class="card-text text-muted h5"><i class="fa-regular fa-heart"></i>
                                 {{ post.number_of_likes }}</p>
                             {% endif %}
                         </div>
