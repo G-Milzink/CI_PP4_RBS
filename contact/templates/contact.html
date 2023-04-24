@@ -12,13 +12,12 @@
                     <p>Please Login to send us a message.</p>
                     <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Login</a></button>
                     <p>Not registered yet? SignUp now!</p>
-                    <button class="btn btn-success" type="submit"><a href="{% url 'account_signup' %}">SignUp</a></button>
+                    <button class="btn btn-warning" type="submit"><a href="{% url 'account_signup' %}">SignUp</a></button>
                     {% else %}
 
                     {% if user.is_authenticated %}
                     <div class="row text-center">
                         <div class="col-12">
-                            <h2 class="fw-bold mt-3">Send Message</h2>
                             <hr>
                         </div>
                     </div>
