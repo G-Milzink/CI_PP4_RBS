@@ -7,7 +7,7 @@ from .forms import ContactForm
 
 def get_user_instance(request):
     """
-    retrieves user details if logged in
+    if logged in, retreive user details.
     """
 
     user_email = request.user.email
@@ -17,16 +17,14 @@ def get_user_instance(request):
 
 class ContactMessage(View):
     """
-    This view displays the contact form and if the user
-    is registered and inserts the user email into the
-    email field
+    display contact form and insert email when logged in
     """
     template_name = 'contact/contact.html'
-    success_message = 'Message has been sent.'
+    success_message = 'Your message was sent.'
 
     def get(self, request, *args, **kwargs):
         """
-        Retrieves users email and inputs into email input
+        Retrieve user email and insert into email field
         """
         if request.user.is_authenticated:
             email = request.user.email
@@ -38,8 +36,7 @@ class ContactMessage(View):
 
     def post(self, request):
         """
-        Checks that the provided info is valid format
-        and then posts to database
+        if form is valid, post to database
         """
         contact_form = ContactForm(data=request.POST)
 
