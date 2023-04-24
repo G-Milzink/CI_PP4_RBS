@@ -10,11 +10,9 @@
                     <h1 class="text-center">Send us a message!</h1>
                     {% if not user.is_authenticated %}
                     <p>Please Login to send us a message.</p>
-                    <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Login here
-                            Page</a></button>
+                    <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Login</a></button>
                     <p>Not registered yet? SignUp now!</p>
-                    <button class="btn btn-success" type="submit"><a href="{% url 'account_signup' %}">SignUp here
-                            Page</a></button>
+                    <button class="btn btn-success" type="submit"><a href="{% url 'account_signup' %}">SignUp</a></button>
                     {% else %}
 
                     {% if user.is_authenticated %}
