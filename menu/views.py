@@ -10,5 +10,5 @@ def food_menu(request):
 
 def drinks_menu(request):
 
-    food_items = FoodItem.objects.all()
-    return render(request, 'drinks.html', {'drinks_items': food_items})
+    drink_items = FoodItem.objects.all()
+    return render(request, 'drinks.html', {'drink_items': drink_items})
