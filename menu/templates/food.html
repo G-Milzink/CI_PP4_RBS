@@ -7,17 +7,45 @@
         <div class="col-md-8">
             <div class="card mb-8 card_margin">
                 <div class="card-body card-styling">
-                    <h3>Starters</h3>
+                    <h3 class="text-center">Starters</h3>
                     {% for item in food_items %}
                     {% if item.item_category == 1 and item.item_available %}
-                    <hr>
                     <br>
                     <h5>{{ item.item_name }}</h5>
                     <p>
                         {{ item.item_description | safe }}
                         € {{ item.item_price }}
                     </p>
-
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card mb-8 card_margin">
+                <div class="card-body card-styling">
+                    <h3 class="text-center">Mains</h3>
+                    {% for item in food_items %}
+                    {% if item.item_category == 2 and item.item_available %}
+                    <br>
+                    <h5>{{ item.item_name }}</h5>
+                    <p>
+                        {{ item.item_description | safe }}
+                        € {{ item.item_price }}
+                    </p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card mb-8 card_margin">
+                <div class="card-body card-styling">
+                    <h3 class="text-center">Desserts</h3>
+                    {% for item in food_items %}
+                    {% if item.item_category == 3 and item.item_available %}
+                    <br>
+                    <h5>{{ item.item_name }}</h5>
+                    <p>
+                        {{ item.item_description | safe }}
+                        € {{ item.item_price }}
+                    </p>
                     {% endif %}
                     {% endfor %}
                 </div>

@@ -1,7 +1,7 @@
 from django.db import models
 
 
-FOOD_CATEGORY = ((0, 'New'), (1, 'Starters'), (2, 'Mains'), (3, 'Desserts'), (4, 'Bites'))  # noqa
+FOOD_CATEGORY = ((0, 'New'), (1, 'Starters'), (2, 'Mains'), (3, 'Desserts'))  # noqa
 DRINK_CATEGORY = ((0, 'New'), (1, 'Beers'), (2, 'Wines'), (3, 'Non-Alchocolic'))  # noqa
 
 
