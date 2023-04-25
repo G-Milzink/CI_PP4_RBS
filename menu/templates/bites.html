@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-12 mt-3 left">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+            <div class="card mb-8 card_margin">
+                <div class="card-body card-styling">
+                    <h3 class="text-center">Vegetarian</h3>
+                    {% for item in bites_items %}
+                    {% if item.item_category == 1 and item.item_available %}
+                    <br>
+                    <h5>{{ item.item_name }}</h5>
+                    <p>
+                        {{ item.item_description | safe }}
+                        € {{ item.item_price }}
+                    </p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card mb-8 card_margin">
+                <div class="card-body card-styling">
+                    <h3 class="text-center">Assorted</h3>
+                    {% for item in bites_items %}
+                    {% if item.item_category == 2 and item.item_available %}
+                    <br>
+                    <h5>{{ item.item_name }}</h5>
+                    <p>
+                        {{ item.item_description | safe }}
+                        € {{ item.item_price }}
+                    </p>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
