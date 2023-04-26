@@ -9,7 +9,6 @@ class PostList(generic.ListView):
     model = Blogpost
     queryset = Blogpost.objects.filter(status=1).order_by('-created_on')
     template_name = 'blog.html'
-    paginate_by = 4
 
     def get(self, request, *args, **kwargs):
 

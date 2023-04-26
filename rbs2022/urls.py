@@ -25,3 +25,5 @@ urlpatterns = [
     path('', include('contact.urls'), name="contact_urls"),
     path('', include('menu.urls'), name="menu_urls")
 ]
+
+handler404 = 'home.views.handle_404'
