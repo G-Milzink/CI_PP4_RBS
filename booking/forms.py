@@ -12,7 +12,9 @@ class BookingForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
 
-    booking_date = forms.DateField()
+    booking_date = forms.DateField(
+        widget=forms.DateInput(
+            attrs={'type': 'date', 'min': datetime.now().date()}))
 
     phone = PhoneNumberField()
 

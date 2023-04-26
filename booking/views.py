@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.views import generic, View
+from django.contrib import messages
 from .models import Booking
 from .forms import BookingForm
 
@@ -22,3 +23,21 @@ class Bookings(View):
             booking_form = BookingForm()
         return render(request, 'bookings.html',
                       {'booking_form': booking_form})
+
+    def post(self, request):
+
+        booking_form = BookingForm(data=request.POST)
+
+        if booking_form.is_valid():
+            booking = booking_form.save(commit=False)
+            booking.user = request.user
+            booking.save()
+            messages.success(request, "Booking received")
+
+        return render(request, 'received.html', {'booking_form': booking_form})
+
+
+class Received(generic.DetailView):
+
+    def get(self, request):
+        return render(request, 'received.html')
