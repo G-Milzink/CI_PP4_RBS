@@ -23,6 +23,5 @@ class BookingForm(forms.ModelForm):
             'phone',
             'email',
             'nr_of_guests',
-            'table',
             'booking_date',
             'booking_time')
