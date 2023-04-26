@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.core.paginator import Paginator
 from django.http import HttpResponseRedirect
 from .models import Blogpost
 from .forms import CommentForm
@@ -15,12 +14,9 @@ class PostList(generic.ListView):
     def get(self, request, *args, **kwargs):
 
         posts = Blogpost.objects.all()
-        paginator = Paginator(Blogpost.objects.all(), 4)
-        page = request.GET.get('page')
-        post_list = paginator.get_page(page)
 
         return render(
-            request, 'blog.html',  {'posts': posts, 'post_list': post_list})
+            request, 'blog.html',  {'posts': posts})
 
 
 class PostDetail(View):
