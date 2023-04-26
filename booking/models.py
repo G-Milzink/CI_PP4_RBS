@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from phonenumber_field.modelfields import PhoneNumberField
 
 
 # kitchen open from 16:00 til 00:00
@@ -22,7 +23,7 @@ time_slots = (
     ('23:00', '23:00'),
 )
 
-booking_status = (
+status_options = (
     ('Unconfirmed', 'Unconfirmed'),
     ('Confirmed', 'Confirmed'),
     ('Rejected', 'Rejected'),
@@ -34,10 +35,42 @@ class Table(models.Model):
 
     table_id = models.AutoField(primary_key=True)
     table_name = models.CharField(max_length=20, default='new', unique=True)
-    nr_of_seats = models.PositiveIntegerField(default=2)
+    nr_of_seats = models.IntegerField(default=2)
 
     class meta:
         ordering = ['-nr_of_seats']
 
     def __str__(self):
         return self.table_name
+
+
+class Booking(models.Model):
+
+    booking_id = models.AutoField(primary_key=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    booking_date = models.DateField()
+    booking_time = models.CharField(max_length=10, choices=time_slots, default='16:00')
+    table = models.ForeignKey(Table, on_delete=models.CASCADE, related_name='table_booked', null=True)
+    user = models.ForeignKey( User, on_delete=models.CASCADE, related_name="user", null=True)
+    name = models.CharField(max_length=50, null=True)
+    email = models.EmailField(max_length=250, default='')
+    phone = PhoneNumberField(null=True)
+    booking_status = models.CharField(max_length=12, choices=status_options, default='Unconfirmed')
+    nr_of_seats = (
+        (1, '1 Guest'),
+        (2, '2 Guests'),
+        (3, '3 Guests'),
+        (4, '4 Guests'),
+        (5, '5 Guests'),
+        (6, '6 Guests'),
+        (7, '7 Guests'),
+        (8, '8 Guests'),
+    )
+    nr_of_guests = models.IntegerField(choices=nr_of_seats, default=2)
+
+    class Meta:
+        ordering = ['-booking_time']
+        unique_together = ('booking_date', 'booking_time', 'table')
+
+    def __str__(self):
+        return self.booking_status
