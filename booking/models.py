@@ -1,9 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# kitchen open from 17:00 til 00:00
-# latest possible time slot is 23:00
+
+# kitchen open from 16:00 til 00:00
+# latest possible time-slot for booking is 23:00
 time_slots = (
+    ('16:00', '16:00'),
+    ('16:30', '16:30'),
     ('17:00', '17:00'),
     ('17:30', '17:30'),
     ('18:00', '18:00'),
@@ -32,7 +35,7 @@ class Table(models.Model):
     table_id = models.AutoField(primary_key=True)
     table_name = models.CharField(max_length=20, default='new', unique=True)
     nr_of_seats = models.PositiveIntegerField(default=2)
-    
+
     class meta:
         ordering = ['-nr_of_seats']
 
