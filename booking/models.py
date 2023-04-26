@@ -31,19 +31,6 @@ status_options = (
 )
 
 
-class Table(models.Model):
-
-    table_id = models.AutoField(primary_key=True)
-    table_name = models.CharField(max_length=20, default='new', unique=True)
-    nr_of_seats = models.IntegerField(default=2)
-
-    class meta:
-        ordering = ['-nr_of_seats']
-
-    def __str__(self):
-        return self.table_name
-
-
 class Booking(models.Model):
 
     booking_id = models.AutoField(primary_key=True)
@@ -53,12 +40,6 @@ class Booking(models.Model):
         max_length=10,
         choices=time_slots,
         default='16:00'
-        )
-    table = models.ForeignKey(
-        Table,
-        on_delete=models.CASCADE,
-        related_name='table_booked',
-        null=True
         )
     user = models.ForeignKey(
         User,
@@ -88,7 +69,6 @@ class Booking(models.Model):
 
     class Meta:
         ordering = ['-booking_time']
-        unique_together = ('booking_date', 'booking_time', 'table')
 
     def __str__(self):
         return self.booking_status
