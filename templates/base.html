@@ -12,7 +12,7 @@
   <!-- my CSS -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-  <title>Restaurant Booking Site</title>
+  <title>Wine & Vinegar</title>
 </head>
 
 <body>
@@ -99,13 +99,7 @@
   <!-- bootstrap 5.2.3: -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
   <!-- alert message timeout script -->
-  <script>
-    setTimeout(function () {
-      let messages = document.getElementById("msg");
-      let alert = new bootstrap.Alert(messages);
-      alert.close();
-    }, 2500);
-  </script>
+  <script src="{% static 'js/msg_timeout.js' %}"></script>
 </body>
 
 </html>
