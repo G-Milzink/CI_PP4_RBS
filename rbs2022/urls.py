@@ -23,7 +23,8 @@ urlpatterns = [
     path('', include('home.urls'), name="home"),
     path('blog/', include('blog.urls'), name='blog_urls'),
     path('', include('contact.urls'), name="contact_urls"),
-    path('', include('menu.urls'), name="menu_urls")
+    path('', include('menu.urls'), name="menu_urls"),
+    path('', include('booking.urls'))
 ]
 
 handler404 = 'home.views.handle_404'

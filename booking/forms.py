@@ -14,7 +14,7 @@ class BookingForm(forms.ModelForm):
 
     booking_date = forms.DateField()
 
-    phone = PhoneNumberField(blank=True)
+    phone = PhoneNumberField()
 
     class Meta:
         model = Booking
