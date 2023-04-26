@@ -49,13 +49,31 @@ class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True)
     created_on = models.DateTimeField(auto_now_add=True)
     booking_date = models.DateField()
-    booking_time = models.CharField(max_length=10, choices=time_slots, default='16:00')
-    table = models.ForeignKey(Table, on_delete=models.CASCADE, related_name='table_booked', null=True)
-    user = models.ForeignKey( User, on_delete=models.CASCADE, related_name="user", null=True)
+    booking_time = models.CharField(
+        max_length=10,
+        choices=time_slots,
+        default='16:00'
+        )
+    table = models.ForeignKey(
+        Table,
+        on_delete=models.CASCADE,
+        related_name='table_booked',
+        null=True
+        )
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="user",
+        null=True
+        )
     name = models.CharField(max_length=50, null=True)
     email = models.EmailField(max_length=250, default='')
     phone = PhoneNumberField(null=True)
-    booking_status = models.CharField(max_length=12, choices=status_options, default='Unconfirmed')
+    booking_status = models.CharField(
+        max_length=12,
+        choices=status_options,
+        default='Unconfirmed'
+        )
     nr_of_seats = (
         (1, '1 Guest'),
         (2, '2 Guests'),
