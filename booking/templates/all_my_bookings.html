@@ -6,11 +6,29 @@
         <div class="col-md-6 mt-3 offset-md-3">
             <div class="card card-styling">
                 <div class="card-body">
-                    <h3>All My Bookings</h3>
-                    <br>
-                    <button class="btn btn-success" type="submit">
-                        <a href="{% url 'bookings' %}">New Booking</a>
-                    </button>
+                    {% if user.is_authenticated %}
+                        <h3>My Bookings:</h3>
+                            {% for booking in my_bookings %}
+                                <hr>
+                                <h5>{{ booking.name}}, {{booking.nr_of_guests}} Guests</h5>
+                                <p>{{ booking.booking_date}}, {{booking.booking_time}} <br>
+                                    Status: {{booking.booking_status}}
+                                </p>
+                                {% if booking.booking_status == 'Rejected' %}
+                                    <p>Our apologies,<br>
+                                        we are not able to accomdate you at the chosen date and time <br>
+                                        Please try another time slot or contact us here:
+                                    </p>
+                                    <button class="btn btn-success" type="submit">
+                                        <a class="nav-link" href="/contact">Contact</a>
+                                    </button>
+                                {% endif %} 
+                            {% endfor %}
+                        <hr>
+                        <button class="btn btn-success" type="submit">
+                            <a href="{% url 'bookings' %}">New Booking</a>
+                        </button>
+                    {% endif %}
                 </div>
             </div>
         </div>
