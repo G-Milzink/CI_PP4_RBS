@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.views import generic, View
 from django.contrib import messages
+import datetime
 from .models import Booking
 from .forms import BookingForm
 
@@ -41,3 +42,30 @@ class Received(generic.DetailView):
 
     def get(self, request):
         return render(request, 'received.html')
+
+
+class AllMyBookings(generic.ListView):
+
+    model = Booking
+    queryset = Booking.objects.filter().order_by('-created_on')
+
+    def get(self, request, *args, **kwargs):
+
+        all_bookings = Booking.objects.all()
+        today = datetime.datetime.now().date()
+
+        for date in all_bookings:
+            if date.booking_date < today:
+                date.booking_status = 'Expired'
+
+        if request.user.is_authenticated:
+            my_bookings = Booking.objects.filter(user=request.user)
+
+            return render(
+                request,
+                'all_my_bookings.html',
+                {
+                    'all_bookings': all_bookings,
+                    'my_bookings': my_bookings})
+        else:
+            return redirect('accounts/login.html')

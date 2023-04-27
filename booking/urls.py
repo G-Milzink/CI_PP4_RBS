@@ -6,4 +6,5 @@ from booking import views
 urlpatterns = [
     path('bookings', views.Bookings.as_view(), name='bookings'),
     path('received', views.Received.as_view(), name='received'),
+    path('allmybookings', views.AllMyBookings.as_view(), name='allmybookings')
 ]
