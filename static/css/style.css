@@ -38,16 +38,24 @@ body {
 
 /* overall styling */
 
-.card-styling {
+.card {
     background-color: rgb(97, 98, 83);
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
 }
 
-.card-styling, a {
+.card, a {
     text-decoration: none;
     color: black;
     border-color: black;
+}
+
+.card-text {
+    border-radius: 5px;
+}
+
+.blog-content {
+    background-color: rgb(156, 157, 134);
 }
 
 .home_images {
@@ -65,8 +73,22 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.card-img-top {
+    border-radius: 2px;
+    
+}
+
 .like_no_border {
     border: 0px;
     border-color: black;
     background-color: rgba(0, 0, 0, 0);
+}
+
+.image-container {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn {
+    color: black;
 }

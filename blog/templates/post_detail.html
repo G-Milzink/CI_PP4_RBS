@@ -26,7 +26,7 @@
                                     {% endif %}
                                 </div>
                                 <div class="col card mb-4  mt-3 left  top">
-                                    <div class="card-body">
+                                    <div class="card-body blog-content">
                                         <p class="card-text "></p>
                                         <div class="row">
                                             {{post.content | safe}}
@@ -89,16 +89,21 @@
                                         </div>
                                         {% else %}
                                         {% if user.is_authenticated %}
-
-                                        <h3>Leave a comment:</h3>
-                                        <p>Posting as: {{ user.username }}</p>
-                                        <form method="post" style="margin-top: 1.3em;">
-                                            {{ comment_form | crispy }}
-                                            {% csrf_token %}
-                                            <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                                        </form>
+                                            <h3>Leave a comment:</h3>
+                                            <p>Posting as: {{ user.username }}</p>
+                                            <form method="post" style="margin-top: 1.3em;">
+                                                {{ comment_form | crispy }}
+                                                {% csrf_token %}
+                                                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                                            </form>
+                                        {% else %}
+                                            <p>Please Login to comment</p>
+                                            <button class="btn btn-success" type="submit">
+                                                <a href="{% url 'account_login' %}" class="nav-link">LogIn</a>
+                                            </button>
                                         {% endif %}
                                         {% endif %}
+                                        
                                     </div>
                                 </div>
                             </div>
