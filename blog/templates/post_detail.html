@@ -39,7 +39,8 @@
                                                         {% if liked %}
                                                         <button type="submit" name="blogpost_id" value="{{post.slug}}"
                                                             class="btn-like like_no_border">
-                                                            <i class="fa-regular fa-heart fa-beat" style="color: #ff0000"></i>
+                                                            <i class="fa-regular fa-heart fa-beat"
+                                                                style="color: #ff0000"></i>
                                                             {{ post.number_of_likes }}
                                                         </button>
                                                         {% else %}
@@ -89,21 +90,21 @@
                                         </div>
                                         {% else %}
                                         {% if user.is_authenticated %}
-                                            <h3>Leave a comment:</h3>
-                                            <p>Posting as: {{ user.username }}</p>
-                                            <form method="post" style="margin-top: 1.3em;">
-                                                {{ comment_form | crispy }}
-                                                {% csrf_token %}
-                                                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                                            </form>
+                                        <h3>Leave a comment:</h3>
+                                        <p>Posting as: {{ user.username }}</p>
+                                        <form method="post" style="margin-top: 1.3em;">
+                                            {{ comment_form | crispy }}
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                                        </form>
                                         {% else %}
-                                            <p>Please Login to comment</p>
-                                            <button class="btn btn-success" type="submit">
-                                                <a href="{% url 'account_login' %}" class="nav-link">LogIn</a>
-                                            </button>
+                                        <p>Please Login to comment</p>
+                                        <button class="btn btn-success" type="submit">
+                                            <a href="{% url 'account_login' %}" class="nav-link">LogIn</a>
+                                        </button>
                                         {% endif %}
                                         {% endif %}
-                                        
+
                                     </div>
                                 </div>
                             </div>
