@@ -47,7 +47,6 @@ class Received(generic.DetailView):
 class AllMyBookings(generic.ListView):
 
     model = Booking
-    queryset = Booking.objects.filter().order_by('-created_on')
 
     def get(self, request, *args, **kwargs):
 
@@ -59,7 +58,8 @@ class AllMyBookings(generic.ListView):
                 date.booking_status = 'Expired'
 
         if request.user.is_authenticated:
-            my_bookings = Booking.objects.filter(user=request.user)
+            my_bookings = Booking.objects.filter(
+                user=request.user).filter().order_by('booking_date')
 
             return render(
                 request,
