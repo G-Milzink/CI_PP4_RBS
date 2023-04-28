@@ -1,5 +1,10 @@
 /* Google fonts: */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@400;500;600;700&display=swap');
+
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Domine', serif;
+*/
 
 /* --- base.html --- */
 
@@ -18,6 +23,8 @@
 body {
     background-color: rgb(42, 80, 98);
     color: rgb(134, 134, 134);
+    font-family: 'Domine', serif;
+    
 }
 
 .navbar {
