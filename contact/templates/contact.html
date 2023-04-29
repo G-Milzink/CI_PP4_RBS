@@ -10,15 +10,11 @@
                     <h2 class="text-center">Send us a message!</h2>
                     {% if not user.is_authenticated %}
                     <p>Please Login to send us a message.</p>
-                    <a href="{% url 'account_logout' %}">
-                        <button class="btn btn-success" type="submit">Log In</button>
-                    </a>
+                    <a href="{% url 'account_login' %}" class="btn btn-success">Log In</a>
                     <br>
                     <br>
                     <p>Not registered yet? SignUp now!</p>
-                    <a href="{% url 'account_signup' %}">
-                        <button class="btn btn-warning" type="submit">Sign Up</button>
-                    </a>
+                    <a href="{% url 'account_signup' %}" class="btn btn-success">Sign Up</a>
                     {% else %}
 
                     {% if user.is_authenticated %}

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <div class="container-fluid">
@@ -13,8 +13,7 @@
                         <div class="card-body card-styling">
                             <div class="image-container">
                                 {% if "placeholder" in post.image.url %}
-                                <img class="card-img-top"
-                                    src="https://designshack.net/wp-content/uploads/placehold.jpg">
+                                <img class="card-img-top" src="{% static 'images/placehold.jpg' %}">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.image.url }}">
                                 {% endif %}

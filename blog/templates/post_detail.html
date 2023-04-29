@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
 {% load crispy_forms_tags %}
@@ -20,9 +20,9 @@
                                 </div>
                                 <div class="d-none d-md-block col-md-6 masthead-image">
                                     {% if "placeholder" in post.image.url %}
-                                    <img src="https://designshack.net/wp-content/uploads/placehold.jpg" width="100%">
+                                        <img src="{% static 'images/placehold.jpg' %}" width="100%">
                                     {% else %}
-                                    <img src="{{post.image.url}}" width="100%">
+                                        <img src="{{post.image.url}}" width="100%">
                                     {% endif %}
                                 </div>
                                 <div class="col card mb-4  mt-3 left  top">
@@ -52,18 +52,14 @@
                                                         {% endif %}
                                                     </form>
                                                     {% else %}
-                                                    <span class="text-secondary"><i class="fa-regular fa-heart"></i>
-                                                        {{ post.number_of_likes }}
-                                                    </span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    {{ post.number_of_likes }}
                                                     {% endif %}
                                                 </strong>
                                             </div>
                                             <div class="col-1">
-                                                {% with comments.count as total_comments %}
-                                                <strong class="text-secondary"><i class="fa-regular fa-comment"></i>
-                                                    {{total_comments}}
-                                                </strong>
-                                                {% endwith %}
+                                                <i class="fa-regular fa-comment"></i>
+                                                {{comments.count}}
                                             </div>
                                         </div>
                                     </div>
@@ -95,13 +91,12 @@
                                         <form method="post" style="margin-top: 1.3em;">
                                             {{ comment_form | crispy }}
                                             {% csrf_token %}
-                                            <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                                            <br>
+                                            <button type="submit" class="btn btn-success">Submit</button>
                                         </form>
                                         {% else %}
-                                        <p>Please Login to comment</p>
-                                            <a href="{% url 'account_login' %}" class="nav-link">
-                                                <button class="btn btn-success" type="submit">LogIn</button>
-                                            </a>
+                                            <p>Please Login to comment</p>
+                                            <a href="{% url 'account_login' %}" class="btn btn-success">LogIn</a>
                                         {% endif %}
                                         {% endif %}
 
