@@ -7,29 +7,26 @@
             <div class="card card-styling">
                 <div class="card-body">
                     {% if user.is_authenticated %}
-                    <h3>My Bookings:</h3>
+                        <h3>My Bookings:</h3>
                     {% for booking in my_bookings %}
-                    <hr>
-                    <h5>{{ booking.name}}, {{booking.nr_of_guests}} Guests</h5>
-                    <p>{{ booking.booking_date}}, {{booking.booking_time}} <br>
-                        Status: {{booking.booking_status}}
-                    </p>
+                        <hr>
+                        <h5>{{ booking.name}}, {{booking.nr_of_guests}} Guests</h5>
+                        <p>{{ booking.booking_date}}, {{booking.booking_time}} <br>
+                            Status: {{booking.booking_status}}
+                        </p>
                     {% if booking.booking_status == 'Rejected' %}
-                    <p>Our apologies,<br>
-                        we are not able to accomdate you at the chosen date and time <br>
-                        Please try another time slot or contact us here:
-                    </p>
-                    <button class="btn btn-success" type="submit">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </button>
+                        <p>Our apologies,<br>
+                            we are not able to accomdate you at the chosen date and time <br>
+                            Please try another time slot or contact us here:
+                        </p>
+                        <a href="{% url 'contact' %}" class="btn btn-success">Contact</a>
+                    {% elif booking.booking_status == 'Unconfirmed' %}
+                        <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-success">Edit</a>
                     {% endif %}
-                    <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-success">Edit</a>
-                    <a href="{% url 'cancel_booking' booking.pk %}" class="btn btn-danger">Cancel</a>
+                        <a href="{% url 'cancel_booking' booking.pk %}" class="btn btn-danger">Cancel</a>
                     {% endfor %}
                     <hr>
-                    <button class="btn btn-success" type="submit">
-                        <a href="{% url 'bookings' %}">New Booking</a>
-                    </button>
+                    <a href="{% url 'bookings' %}" class="btn btn-success">New Booking</a>
                     {% endif %}
                 </div>
             </div>
