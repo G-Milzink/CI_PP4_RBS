@@ -1,8 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib.auth.models import User
 from django.views import generic, View
 from django.contrib import messages
 import datetime
+from django.contrib.messages.views import SuccessMessageMixin
+from django.views.generic.edit import UpdateView
 from .models import Booking
 from .forms import BookingForm
 
@@ -69,3 +71,27 @@ class AllMyBookings(generic.ListView):
                     'my_bookings': my_bookings})
         else:
             return redirect('accounts/login.html')
+
+
+class EditBooking(SuccessMessageMixin, UpdateView):
+
+    model = Booking
+    form_class = BookingForm
+    template_name = 'edit_booking.html'
+    success_message = 'Booking updated.'
+
+    def get_success_url(self, **kwargs):
+        return reverse('allmybookings')
+
+
+def cancel_booking(request, pk):
+
+    booking = Booking.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        booking.delete()
+        messages.success(request, "Booking cancelled")
+        return redirect('allmybookings')
+
+    return render(
+        request, 'cancel_booking.html', {'booking': booking})

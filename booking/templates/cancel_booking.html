@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-3 offset-md-3">
+            <div class="card card-styling">
+                <div class="card-body">
+                    {% if not user.is_authenticated %}
+                        <h2>Login required</h2>
+                        <p>Please login to cancel bookings</p>
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
+                                Page</a></button>
+                        {% else %}
+                        <!-- Display form if user is logged in-->
+                        {% if user.is_authenticated and user == booking.user %}
+                        <h3>{{ booking.name }}</h3>
+                        <p>{{ booking.booking_date }} at
+                            {{ booking.booking_time }}</p><br>
+                        <p>Booking status: {{ booking.status }}.</p>
+                        <p>No. of Guests: {{ booking.nr_of_guests }}.</p>
+                        <form method="POST">
+                            {% csrf_token %}
+                            <button class="btn btn-danger" type="submit">YES</button>
+                            <a href="{% url 'allmybookings' %}" class="btn btn-secondary">Return</a>
+                        </form>
+                        {% endif %}
+                        {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
