@@ -8,13 +8,16 @@
             <div class="card card_margin">
                 <div class="card-body">
                     <h2 class="text-center">Send us a message!</h2>
+                    <hr>
                     {% if not user.is_authenticated %}
-                    <p>Please Login to send us a message.</p>
-                    <a href="{% url 'account_login' %}" class="btn btn-success">Log In</a>
-                    <br>
-                    <br>
-                    <p>Not registered yet? SignUp now!</p>
-                    <a href="{% url 'account_signup' %}" class="btn btn-success">Sign Up</a>
+                    <div class="text-center">
+                        <p>Please Login to send us a message.</p>
+                        <a href="{% url 'account_login' %}" class="btn btn-success">Log In</a>
+                        <br>
+                        <br>
+                        <p>Not registered yet? SignUp now!</p>
+                        <a href="{% url 'account_signup' %}" class="btn btn-success">Sign Up</a>
+                    </div>
                     {% else %}
 
                     {% if user.is_authenticated %}
@@ -39,6 +42,7 @@
                     <div class="card card_margin">
                         <div class="card-body text-center">
                             <h4>Wine & Vinegar</h4>
+                            <hr>
                             <p>Achterom 29, 2511 AG Den Haag</p>
                             <p>Phone: 012-3456789</p>
                             <p>Email: WineVinegar@email.com</p>
