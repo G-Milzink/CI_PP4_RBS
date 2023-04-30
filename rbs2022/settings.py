@@ -33,6 +33,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['ci-pp4-rbs.herokuapp.com', 'localhost']
 
+X_FRAMEOPTIONS = 'SAMEORIGIN'
 
 # Application definition
 
