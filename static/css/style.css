@@ -1,10 +1,6 @@
 /* Google fonts: */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@400;500;600;700&display=swap');
 
-/* 
-font-family: 'Dancing Script', cursive;
-font-family: 'Domine', serif;
-*/
 
 /* --- base.html --- */
 
@@ -66,6 +62,11 @@ body {
 .img_link {
     border: 10px solid black;
     border-radius: 5%;
+}
+
+.dancing {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
 }
 
 /* --- blog.html --- */
