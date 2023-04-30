@@ -1,6 +1,6 @@
-# The Diplomat | Bar & Grill
+# Wine & Vinegar | Restaurant
 
-am-i-responive image goes here....
+![Am I Responsive](docs/am-i-responsive.webp)
 
 **Developer: Gustaaf Milzink**
 
