@@ -7,23 +7,55 @@
         <!-- Image Carousel from Bootstrap -->
         <div class="col-12 mt-3 left">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-9">
-                    <div class="card mb-9 card_margin">
-                        <div class="card-body card-styling">
+                <div class="col-md-8">
+                    <div class="card mb-8 card_margin">
+                        <div class="card-body">
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="{% static 'images/carousel_1.jpg' %}" class="d-block w-100 home_images"
-                                            alt="...">
+                                        <img src="{% static 'images/carousel_1.jpg' %}"
+                                            class="d-block w-100 home_images" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{% static 'images/carousel_2.jpg' %}" class="d-block w-100 home_images"
-                                            alt="...">
+                                        <img src="{% static 'images/carousel_2.jpg' %}"
+                                            class="d-block w-100 home_images" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{% static 'images/carousel_3.jpg' %}" class="d-block w-100 home_images"
-                                            alt="...">
+                                        <img src="{% static 'images/carousel_3.jpg' %}"
+                                            class="d-block w-100 home_images" alt="...">
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="banner">Welcome</h1>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card mb-8 card_margin">
+                                <div class="card-body justify-content-center md-3">
+                                    <a href="{% url 'food' %}">
+                                        <img src="{% static 'images/menu_link_img.jpg'%}" alt="" class="col-md-12 home_images">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8 card_margin">
+                                <div class="card-body justify-content-center md-3">
+                                    <a href="{% url 'blog' %}">
+                                        <img src="{% static 'images/booking_link_img.jpg'%}" alt="" class="col-md-12 home_images">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8 card_margin">
+                                <div class="card-body justify-content-center md-3">
+                                    <a href="{% url 'blog' %}">
+                                        <img src="{% static 'images/blog_link_img.jpg'%}" alt="" class="col-md-12 home_images">
+                                    </a>
                                 </div>
                             </div>
                         </div>

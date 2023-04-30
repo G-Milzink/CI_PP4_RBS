@@ -63,6 +63,11 @@ body {
      border-radius: 5px;
 }
 
+.img_link {
+    border: 10px solid black;
+    border-radius: 5%;
+}
+
 /* --- blog.html --- */
 
 a:hover {
