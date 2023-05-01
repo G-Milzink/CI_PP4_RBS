@@ -25,6 +25,10 @@ class Blogpost(models.Model):
         'image',
         default='placeholder'
     )
+    image_description = models.CharField(
+        max_length=80,
+        default="An image related to this specific blogpost"
+    )
     excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
