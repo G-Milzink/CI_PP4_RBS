@@ -17,7 +17,7 @@
                         <h3>{{ booking.name }}</h3>
                         <p>{{ booking.booking_date }} at
                             {{ booking.booking_time }}</p><br>
-                        <p>Booking status: {{ booking.status }}.</p>
+                        <p>Booking status: {{ booking.booking_status }}</p>
                         <p>No. of Guests: {{ booking.nr_of_guests }}.</p>
                         <form method="POST">
                             {% csrf_token %}

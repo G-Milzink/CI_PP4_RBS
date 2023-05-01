@@ -335,3 +335,41 @@ The Contact Model contains the following:
 <img src="docs/features/blog/blog_detail.png">
 <img src="docs/features/blog/blog_comments.png">
 </details>
+<br>
+
+### Booking
+- Allows registered users to book a table by way of the booking form.
+- Form will only submit if all fields are filled out and are valid.
+- A message will alert users to incorrectly filled out/empty fields.
+- Provides a link to the users booking overview.
+- Booking status is displayed.
+- If a booking is rejected a message is displayed to the user and link to the contact page is provided.
+- Unconfirmed bookings can be edited/cannceled.
+- Confirmed bookings can not be edited only canceled.
+<details><summary>images</summary>
+<img src="docs/features/booking/booking_log_in.png">
+<img src="docs/features/booking/booking_new_booking.png">
+<img src="docs/features/booking/booking_received.png">
+<img src="docs/features/booking/booking_all_my_bookings.png">
+<img src="docs/features/booking/booking_edit.png">
+<img src="docs/features/booking/booking_cancel.png">
+</details>
+<br>
+
+### Contact Us
+- Registered users can send a message to restaurant staff
+- Adress and contact information is displayed.
+- Google map is provided
+<details><summary>images</summary>
+<img src="docs/features/contact/contact_logged_out.png">
+<img src="docs/features/contact/contact_new_message.png">
+<img src="docs/features/contact/contact_message_sent.png">
+<img src="docs/features/contact/contact_info.png">
+</details>
+<br>
+
+### Food Menu
+
+### Drinks Menu
+
+### Bites Menu

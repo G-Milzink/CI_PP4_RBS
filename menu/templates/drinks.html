@@ -6,11 +6,11 @@
     <div class="row d-flex justify-content-center">
         <div class="col-md-8">
             <div class="card mb-8 card_margin">
-                <div class="card-body card-styling">
-                    <h3 class="text-center">Beers</h3>
+                <div class="card-body card-styling text-center">
+                    <h2 class="dancing">Beers</h2>
                     {% for item in drink_items %}
                     {% if item.item_category == 1 and item.item_available %}
-                    <br>
+                    <hr>
                     <h5>{{ item.item_name }}</h5>
                     <p>
                         {{ item.item_description | safe }}
@@ -21,11 +21,11 @@
                 </div>
             </div>
             <div class="card mb-8 card_margin">
-                <div class="card-body card-styling">
-                    <h3 class="text-center">Wines</h3>
+                <div class="card-body card-styling text-center">
+                    <h2 class="dancing">Wines</h2>
                     {% for item in drink_items %}
                     {% if item.item_category == 2 and item.item_available %}
-                    <br>
+                    <hr>
                     <h5>{{ item.item_name }}</h5>
                     <p>
                         {{ item.item_description | safe }}
@@ -36,11 +36,11 @@
                 </div>
             </div>
             <div class="card mb-8 card_margin">
-                <div class="card-body card-styling">
-                    <h3 class="text-center">Non-Alcholic</h3>
+                <div class="card-body card-styling text-center">
+                    <h2 class="dancing">Non Alchoholic</h2>
                     {% for item in drink_items %}
                     {% if item.item_category == 3 and item.item_available %}
-                    <br>
+                    <hr>
                     <h5>{{ item.item_name }}</h5>
                     <p>
                         {{ item.item_description | safe }}
