@@ -135,3 +135,11 @@ This also helps distuingish the site from many other sites that often use a dark
     - Sign Up allows the user to create an acount so they can use all the sites features.
     - Login allows users to log in to their acount so they can utilize the sites features.
     - 404 error page to display in the event a 404 error is raised, provides quick link back to homepage.
+
+#### Database
+
+Built using Python and the Django framework, using ElephantSQL for the deployed version.
+
+<details><summary>Database diagram</summary>
+<img src="docs/db_models/db_model_overview.png">
+</details>
