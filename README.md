@@ -101,7 +101,37 @@ Wine & Vinegar is a fictional restaurant. The website provides users the abillit
 For the colour scheme I have selected a set of light colours to represent the open and informal atmosphere of the restaurant.
 This also helps distuingish the site from many other sites that often use a darker theme these days.
 
-
 <details><summary>Original colour palette:</summary>
 <img src="docs/colour-scheme.png">
 </details>
+
+### Fonts
+
+ Two Google fonts where used across the site:
+ 1. "Dancing Script" with cursive as fallback.
+ 2. "Domine" with sans-serif as fallback.
+
+ The fonts where chosen to complement each other and generate a sense of style/class across the site.
+
+ ### Structure
+
+ #### Website pages
+
+ The site was designed to utilize a familiar navigational structure consisting of a navigation bar along the top of the screen
+ wich collapses into a "hamburger menu" on smaller screen sizes. These are present across all pages.
+
+ - The site contains the following pages:
+    - Homepage with image carousel and image0-links to the menu, booking and blog pages for easy navigation.
+    - Food menu listing all currently available starters, mains and desserts.
+    - Drinks menu listing all currently available drinks.
+    - Bites menu listing all currently available snacks/bites.
+    - Blog page listing all published blogs on a single page.
+    - Blog detail shows a single blogpost for reading.
+    - Booking page allowing users to make a booking and provides a link to a list of all the users previous bookings.
+    - Booking list allows users to view bookings.
+    - Edit booking allows users to edit any unconfirmed bookings.
+    - Cancel booking allows user to cancel a booking and removes it from the database.
+    - Contact allows a user to easily send a message to the restauant staff.
+    - Sign Up allows the user to create an acount so they can use all the sites features.
+    - Login allows users to log in to their acount so they can utilize the sites features.
+    - 404 error page to display in the event a 404 error is raised, provides quick link back to homepage.
