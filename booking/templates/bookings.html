@@ -17,9 +17,7 @@
                     {% if user.is_authenticated %}
                     <div class="row text-center">
                         <div class="col-12">
-                            <button class="btn btn-success" type="submit">
-                                <a href="{% url 'allmybookings' %}">My Bookings</a>
-                            </button>
+                            <a href="{% url 'allmybookings' %}" class="btn btn-warning">My Bookings</a>
                             <h4 class="fw-bold mt-3">Book a table</h4>
                         </div>
                     </div>

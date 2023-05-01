@@ -275,4 +275,63 @@ The Contact Model contains the following:
 
 ## Features
 
+### Logo & Navigation
+- Fully Responsive
+- On small screens switches to hamburger menu
+- Indicates login/logout in status
+- displayed across all pages
+
+<details><summary>images</summary>
+<img src="docs/features/navbar/navbar_logged_out.png">
+<img src="docs/features/navbar/navbar_logged_in.png">
+<img src="docs/features/navbar/navbar_collapsed.png">
+</details>
+<br>
+
 ### Home page
+- Includes image carousel, welcome text and image links to: Food menu, Table Booking and Blog.
+<details><summary>images</summary>
+<img src="docs/features/home/home_carousel.png">
+<img src="docs/features/home/home_image_links.png">
+</details>
+<br>
+
+### Sign up
+- Allow users to register an acoount
+- Username and password are required
+- email is optional
+<details><summary>images</summary>
+<img src="docs/features/signup/signup.png">
+</details>
+<br>
+
+### Log In
+- User can login to make use of the sites features.(make a booking, edit/cancel a booking, send message, comment/like blogposts)
+<details><summary>images</summary>
+<img src="docs/features/login_logout/login.png">
+</details>
+<br>
+
+### Log Out
+- User can logout to prevent others from utilizing their account
+<details><summary>images</summary>
+<img src="docs/features/login_logout/logout.png">
+</details>
+<br>
+
+### Blog
+- Displays all posts made by staff members.
+<details><summary>images</summary>
+<img src="docs/features/blog/blog_list.png">
+</details>
+<br>
+
+### Blog Detail
+- Displays specific blogpost as selected by user.
+- Displays a featured image uploaded by the poster
+- If no image is uploaded a default image is then used
+- Users that have signed up/logged in can comment on/like the post.
+<details><summary>images</summary>
+<img src="docs/features/blog/blog_detail.png">
+<img src="docs/features/blog/blog_comments.png">
+</details>
