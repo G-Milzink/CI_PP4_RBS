@@ -5,7 +5,10 @@ from .models import FoodItem, DrinkItem, BitesItem
 
 @admin.register(DrinkItem)
 class DrinksAdmin(SummernoteModelAdmin):
-    list_display = ('item_name', 'item_category', 'item_price', 'item_available')  # noqa
+    list_display = ('item_name',
+                    'item_category',
+                    'item_price',
+                    'item_available')
     search_fields = ('item_name', 'item_description')
     list_filter = ('item_category', 'item_available')
     summernote_fields = ('item_description')
@@ -13,7 +16,10 @@ class DrinksAdmin(SummernoteModelAdmin):
 
 @admin.register(FoodItem)
 class FoodAdmin(SummernoteModelAdmin):
-    list_display = ('item_name', 'item_category', 'item_price', 'item_available')  # noqa
+    list_display = ('item_name',
+                    'item_category',
+                    'item_price',
+                    'item_available')
     search_fields = ('item_name', 'item_description')
     list_filter = ('item_category', 'item_available')
     summernote_fields = ('item_description')
@@ -21,7 +27,10 @@ class FoodAdmin(SummernoteModelAdmin):
 
 @admin.register(BitesItem)
 class BitesAdmin(SummernoteModelAdmin):
-    list_display = ('item_name', 'item_category', 'item_price', 'item_available')  # noqa
+    list_display = ('item_name',
+                    'item_category',
+                    'item_price',
+                    'item_available')
     search_fields = ('item_name', 'item_description')
     list_filter = ('item_category', 'item_available')
     summernote_fields = ('item_description')

@@ -1,9 +1,17 @@
 from django.db import models
 
 
-FOOD_CATEGORY = ((0, 'New'), (1, 'Starters'), (2, 'Mains'), (3, 'Desserts'))  # noqa
-DRINKS_CATEGORY = ((0, 'New'), (1, 'Beers'), (2, 'Wines'), (3, 'Non-Alchocolic'))  # noqa
-BITES_CATEGORY = ((0, "New"), (1, 'Assorted'), (2, 'Vegetarian'))
+FOOD_CATEGORY = ((0, 'New'),
+                 (1, 'Starters'),
+                 (2, 'Mains'),
+                 (3, 'Desserts'))
+DRINKS_CATEGORY = ((0, 'New'),
+                   (1, 'Beers'),
+                   (2, 'Wines'),
+                   (3, 'Non-Alchocolic'))
+BITES_CATEGORY = ((0, "New"),
+                  (1, 'Assorted'),
+                  (2, 'Vegetarian'))
 
 
 class FoodItem(models.Model):
