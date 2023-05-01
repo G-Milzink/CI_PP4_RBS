@@ -9,7 +9,7 @@
                 <div class="card-body card-styling text-center">
                     <h2 class="dancing">Veggie Bites</h2>
                     {% for item in bites_items %}
-                    {% if item.item_category == 1 and item.item_available %}
+                    {% if item.item_category == 2 and item.item_available %}
                     <hr>
                     <h5>{{ item.item_name }}</h5>
                     <p>
@@ -24,7 +24,7 @@
                 <div class="card-body card-styling text-center">
                     <h2 class="dancing">Assorted Bites</h2>
                     {% for item in bites_items %}
-                    {% if item.item_category == 2 and item.item_available %}
+                    {% if item.item_category == 1 and item.item_available %}
                     <hr>
                     <h5>{{ item.item_name }}</h5>
                     <p>

@@ -369,7 +369,36 @@ The Contact Model contains the following:
 <br>
 
 ### Food Menu
+- Displays all currently available food menu items.
+- Menu items can be added by staff via the site's backend.
+- Menu item availability can be set via the sites backend.
+- Menu items are seperated into "Starters", "Mains" and "Desserts".
+<details><summary>images</summary>
+<img src="docs/features/menu/food_starters.png">
+<img src="docs/features/menu/food_mains.png">
+<img src="docs/features/menu/food_desserts.png">
+</details>
+<br>
 
 ### Drinks Menu
+- Displays all currently available drink menu items.
+- Menu items can be added by staff via the site's backend.
+- Menu item availability can be set via the sites backend.
+- Menu items are seperated into "Beers", "Wines" and "Non Alchoholic".
+<details><summary>images</summary>
+<img src="docs/features/menu/drinks_beers.png">
+<img src="docs/features/menu/drinks_wines.png">
+<img src="docs/features/menu/drinks_nonalc.png">
+</details>
+<br>
 
 ### Bites Menu
+- Displays all currently available bites menu items.
+- Menu items can be added by staff via the site's backend.
+- Menu item availability can be set via the sites backend.
+- Menu items are seperated into "Beers", "Wines" and "Non Alchoholic".
+<details><summary>images</summary>
+<img src="docs/features/menu/bites_veggie.png">
+<img src="docs/features/menu/bites_assorted.png">
+</details>
+<br>
