@@ -12,10 +12,8 @@
                     {% if item.item_category == 1 and item.item_available %}
                     <hr>
                     <h5>{{ item.item_name }}</h5>
-                    <p>
-                        {{ item.item_description | safe }}
-                        € {{ item.item_price }}
-                    </p>
+                    {{ item.item_description | safe }}
+                    € {{ item.item_price }}
                     {% endif %}
                     {% endfor %}
                 </div>
@@ -27,10 +25,8 @@
                     {% if item.item_category == 2 and item.item_available %}
                     <hr>
                     <h5>{{ item.item_name }}</h5>
-                    <p>
-                        {{ item.item_description | safe }}
-                        € {{ item.item_price }}
-                    </p>
+                    {{ item.item_description | safe }}
+                    € {{ item.item_price }}
                     {% endif %}
                     {% endfor %}
                 </div>
@@ -42,10 +38,8 @@
                     {% if item.item_category == 3 and item.item_available %}
                     <hr>
                     <h5>{{ item.item_name }}</h5>
-                    <p>
-                        {{ item.item_description | safe }}
-                        € {{ item.item_price }}
-                    </p>
+                    {{ item.item_description | safe }}
+                    € {{ item.item_price }}
                     {% endif %}
                     {% endfor %}
                 </div>

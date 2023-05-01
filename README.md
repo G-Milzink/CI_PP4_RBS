@@ -402,3 +402,11 @@ The Contact Model contains the following:
 <img src="docs/features/menu/bites_assorted.png">
 </details>
 <br>
+
+## Validation
+
+The following files were validated using W3C Markup Validation Service:
+
+<details><summary>base.html</summary>
+<img src="">
+</details>
