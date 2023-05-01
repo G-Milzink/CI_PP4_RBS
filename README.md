@@ -103,5 +103,5 @@ This also helps distuingish the site from many other sites that often use a dark
 
 
 <details><summary>Original colour palette:</summary>
-<img src="![Alt text](docs/colour-scheme.png)">
+<img src="docs/colour-scheme.png">
 </details>
