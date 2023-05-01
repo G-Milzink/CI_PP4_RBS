@@ -19,6 +19,10 @@
     - [Structure](#structure)
       - [Website pages](#website-pages)
       - [Database](#database)
+    - [Wireframes](#wireframes)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Validation](#validation)
 
 ### About
 
@@ -228,3 +232,41 @@ The Contact Model contains the following:
 - user
 - name
 - email
+
+## Technologies Used
+
+### Languages & Frameworks
+
+- HTML
+- CSS
+- Javascript
+- Python
+- Django
+
+### Libraries & Tools
+
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Balsamiq](https://balsamiq.com/)
+- [Bootstrap v5.2](https://getbootstrap.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Favicon.io](https://favicon.io)
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [Font Awesome](https://fontawesome.com/)
+- [GitPod](https://gitpod.io/)
+- [GitHub](https://github.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku Platform](https://id.heroku.com/login)
+- [jQuery](https://jquery.com)
+- [ElephantSQL](https://www.elephantsql.com/)
+- [Summernote](https://summernote.org/)
+- [Whitenoise](https://pypi.org/project/whitenoise/)
+
+- Validation:
+  - [WC3 Validator](https://validator.w3.org/)
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+  - [JShint](https://jshint.com/)
+  - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+  - [Wave Validator](https://wave.webaim.org/)
+
+
