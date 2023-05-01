@@ -269,4 +269,10 @@ The Contact Model contains the following:
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
 
+<hr>
 
+##### Back to [top](#table-of-contents)
+
+## Features
+
+### Home page
