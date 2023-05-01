@@ -143,3 +143,88 @@ Built using Python and the Django framework, using ElephantSQL for the deployed 
 <details><summary>Database diagram</summary>
 <img src="docs/db_models/db_model_overview.png">
 </details>
+
+##### User Model
+The User Model contains the following:
+- user_id
+- password
+- last_login
+- is_superuser
+- username
+- first_name
+- last_name
+- email
+- is_staff
+- is_active
+- date_joined
+
+##### FoodItem Model
+The FoodItem Model contains the following:
+- item_id
+- item_name
+- item_description
+- item_price
+- item_category
+- item_available
+
+##### DrinkItem Model
+The DrinkItem Model contains the following:
+- item_id
+- item_name
+- item_description
+- item_price
+- item_category
+- item_available
+
+##### BitesItem Model
+TheBitesItem Model contains the following:
+- item_id
+- item_name
+- item_description
+- item_price
+- item_category
+- item_available
+
+##### Blogpost Model
+The Blogpost Model contains the following:
+- post_id
+- title
+- slug
+- author
+- content
+- image
+- created_on
+- updated-on
+- status
+- likes
+
+##### Comment Model
+The Comment Model contains the following:
+- post
+- name
+- email
+- body
+- created_on
+- approved
+
+##### Booking Model
+The Booking Model contains the following:
+- booking_id
+- created_on
+- booking_date
+- booking_time
+- user
+- name
+- email
+- phone
+- booking_status
+- nr_of_seats
+- nr_of_guests
+
+##### Contact Model
+The Contact Model contains the following:
+- message_id
+- created_on
+- user
+- name
+- email
