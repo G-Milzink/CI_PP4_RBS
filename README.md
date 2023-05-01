@@ -407,6 +407,6 @@ The Contact Model contains the following:
 
 The following files were validated using W3C Markup Validation Service:
 
-<details><summary>base.html</summary>
+<details><summary>Home</summary>
 <img src="">
 </details>

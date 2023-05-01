@@ -20,9 +20,9 @@
                                 </div>
                                 <div class="d-none d-md-block col-md-6 masthead-image">
                                     {% if "placeholder" in post.image.url %}
-                                        <img src="{% static 'images/placehold.jpg' %}" width="100%">
+                                        <img src="{% static 'images/placehold.jpg' %}" alt="{{ post.image_description }}" style="width:100%;">
                                     {% else %}
-                                        <img src="{{post.image.url}}" width="100%">
+                                        <img src="{{post.image.url}}" alt="{{ post.image_description }}" style="width:100%;">
                                     {% endif %}
                                 </div>
                                 <div class="col card mb-4  mt-3 left  top">

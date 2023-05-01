@@ -13,9 +13,9 @@
                         <div class="card-body card-styling">
                             <div class="image-container">
                                 {% if "placeholder" in post.image.url %}
-                                <img class="card-img-top" src="{% static 'images/placehold.jpg' %}">
+                                <img class="card-img-top" src="{% static 'images/placehold.jpg' %}" alt="{{ post.image_description }}">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.image.url }}">
+                                <img class="card-img-top" src=" {{ post.image.url }}" alt="{{ post.image_description }}">
                                 {% endif %}
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
