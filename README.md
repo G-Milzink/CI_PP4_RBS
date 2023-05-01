@@ -13,6 +13,12 @@
 - [Site Owner Goals](#site-owner-goals)
 - [User Experience](#user-experience)
 - [User Stories](#user-stories)
+- [Design](#design)
+    - [Colours](#colours)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+      - [Website pages](#website-pages)
+      - [Database](#database)
 
 ### About
 
@@ -82,8 +88,20 @@ Wine & Vinegar is a fictional restaurant. The website provides users the abillit
 22. As site user I want to be able to comment on/like a blogpost so that I can communicate what I think of the content.
 23. As site user I want to be able to get confirmation of any action I take so that I know it was successfull.
 
-### Epics & User Stories
+### Epics
 
 <hr>
 
 ##### Back to [top](#table-of-contents)
+
+## Design
+
+### Colours
+
+For the colour scheme I have selected a set of light colours to represent the open and informal atmosphere of the restaurant.
+This also helps distuingish the site from many other sites that often use a darker theme these days.
+
+
+<details><summary>Original colour palette:</summary>
+<img src="![Alt text](docs/colour-scheme.png)">
+</details>

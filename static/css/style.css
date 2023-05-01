@@ -11,38 +11,38 @@
 .banner {
     font-family: 'Dancing Script', cursive;
     font-size: 400%;
-    color: bisque;
+    color: #ffe4c4;
     text-align: center;
     margin-bottom: 0;
 }
 
 body {
-    background-color: rgb(42, 80, 98);
-    color: rgb(134, 134, 134);
+    background-color: #2a5062;
+    color: bisque;
     font-family: 'Domine', serif;
     
 }
 
 .navbar {
-    color: rgb(94, 94, 94);
+    color: rgb(255, 0, 0);
     font-size: 180%;
 }
 
 .nav-link:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(21, 21, 21);
 }
 
 /* overall styling */
 
 .card {
-    background-color: rgb(97, 98, 83);
+    background-color: #494A3F;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
 }
 
 .card, a {
     text-decoration: none;
-    color: black;
+    color: #ffe4c4;
     border-color: black;
 }
 
@@ -51,7 +51,8 @@ body {
 }
 
 .blog-content {
-    background-color: rgb(156, 157, 134);
+    background-color: #2e2f27;
+    color: bisque;
 }
 
 .home_images {
