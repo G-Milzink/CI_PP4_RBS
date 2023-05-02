@@ -23,6 +23,10 @@
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Validation](#validation)
+- [Testing](#testing)
+    - [User Story testing](#user-story-testing)
+    - [Tests on various devices](#tests-on-various-devices)
+    - [Browser compatibility](#browser-compatibility)
 
 ### About
 
@@ -88,7 +92,7 @@ Wine & Vinegar is a fictional restaurant. The website provides users the abillit
 18. As site user I want to be able to login so that I can book a table.
 19. As site user I want to be able to view previous bookings. 
 20. As site user I want to be able to edit an unconfirmed booking.
-21. As site user I want to be able to cancel an unconfirmed booking.
+21. As site user I want to be able to cancel a booking.
 22. As site user I want to be able to comment on/like a blogpost so that I can communicate what I think of the content.
 23. As site user I want to be able to get confirmation of any action I take so that I know it was successfull.
 
@@ -598,4 +602,272 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 </details>
 <details><summary>urls.py</summary>
 <img src="docs/validation/pep8/project/project_urls.png">
+</details>
+
+### WAVE TESTING
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Testing
+
+### user story testing
+
+1. As site owner I want the site to be fully responsive so that I can provide a good user experience.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|All pages|view site on various screens|site adapts|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_1a.png">
+<img src="docs/user_stories/user_story_1b.png">
+<img src="docs/user_stories/user_story_1c.png">
+</details>
+
+2. As site owner I want to provide a contact page so that users can find/contact the restaurant easily.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Contact Page|click contact link|find contact page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_2.png">
+</details>
+
+3. As site owner I want users to be able to view the menu so that they can easily decide wether or not to book with us.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Menu Page|click menu link|find menu page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_3.png">
+</details>
+
+4. As site owner I want users to be able to book a table online.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Booking Page|click booking link|find booking page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_4.png">
+</details>
+
+4. As site owner I want users to be able to book a table online.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Booking Page|click booking link|find booking page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_4.png">
+</details>
+
+5. as site owner I want to be able to maintain a blog so that users can be informed about the goings on in the restaurant.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Blog Page|click blog link|find booking page|Works as expected|
+|Admin Panel|navigate to admin panel|find blog entry section|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_5a.png">
+<img src="docs/user_stories/user_story_5b.png">
+</details>
+
+6. As site admin I want to be able to login so that I can acces the backend of the site.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Admin Panel|navigate to admin panel|find login page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_6.png">
+</details>
+
+7. As site admin I want to be able to view/make changes to the menus so that I can keep it up to date.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Admin Panel|navigate to admin panel|find menu sections|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_7.png">
+</details>
+
+8. As site admin I want to be able confirm or reject a booking so that I can avoid double bookings.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Admin Panel|navigate to admin panel|find bookings section|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_8a.png">
+<img src="docs/user_stories/user_story_8b.png">
+</details>
+
+9. As site admin I want to be able to manually enter a booking so that I can book a table in response to a user's phonecall or email.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Admin Panel|navigate to admin panel|find bookings section|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_9.png">
+</details>
+
+10. As site admin I want to be able to post articles to the blog so that I can maintain customer communication.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Admin Panel|navigate to admin panel|find blog section|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_10a.png">
+<img src="docs/user_stories/user_story_10b.png">
+</details>
+
+11. As site admin I want to be able to approve blog-comments so that I can make sure nothing innaprorpiate is displayed.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Admin Panel|navigate to admin panel|find comments section|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_11a.png">
+<img src="docs/user_stories/user_story_11b.png">
+</details>
+
+12. As site admin I want to be able to filter bookings by date so that I can see wich bookings we have for a particular day.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Admin Panel|navigate to admin panel|find bookings section|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_12.png">
+</details>
+
+13. As site user I want to be able to easily navigate the site to find the information I am looking for.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Navigation Bar|Click apropriate link|find expected page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_13a.png">
+<img src="docs/user_stories/user_story_13b.png">
+<img src="docs/user_stories/user_story_13c.png">
+<img src="docs/user_stories/user_story_13d.png">
+<img src="docs/user_stories/user_story_13e.png">
+<img src="docs/user_stories/user_story_13f.png">
+<img src="docs/user_stories/user_story_13g.png">
+</details>
+
+14. As site user I want to be able to view the menu.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Navigation Bar|Click apropriate link|find menu page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_13b.png">
+</details>
+
+15. As site user I want to be able to easily contact the restaurant.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Navigation Bar|Click apropriate link|find contact page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_13e.png">
+</details>
+
+16. As site user I want to be able to be able to see the restaurants opening times and location.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Contact Page|Scroll down|find adress & info|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_16.png">
+</details>
+
+17. As site user I want to be able to get a sense of the atmosphere in the restaurant.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Home Page|Open Site|see carousel|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_17a.png">
+<img src="docs/user_stories/user_story_17b.png">
+<img src="docs/user_stories/user_story_17c.png">
+</details>
+
+18. As site user I want to be able to login so that I can book a table.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Login Page|Navigate to login|Find login page|Works as expected|
+|Booking Page|Navigate to booking|Find booking page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_13f.png">
+<img src="docs/user_stories/user_story_13d.png">
+</details>
+
+19. As site user I want to be able to view previous bookings. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Booking Page|Navigate to booking|Find my bookings link|Works as expected|
+|My Bookings Page|click my bookings link|Find my bookings list|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_19a.png">
+<img src="docs/user_stories/user_story_19b.png">
+</details>
+
+20. As site user I want to be able to edit an unconfirmed booking.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|My Bookings Page|click edit button|Find edit form|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_20.png">
+</details>
+
+21. As site user I want to be able to cancel a booking.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|My Bookings Page|click cancel button|Find cancel page|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_21.png">
+</details>
+
+22. As site user I want to be able to comment on/like a blogpost so that I can communicate what I think of the content.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Blog Detail Page|click heart|post is liked|Works as expected|
+|Blog Detail Page|post comment|comment is submitted for approval|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_22a.png">
+<img src="docs/user_stories/user_story_22b.png">
+</details>
+
+23. As site user I want to be able to get confirmation of any action I take so that I know it was successfull.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Popup message|take perform user action|message is displayed|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/user_story_23.png">
 </details>
