@@ -25,8 +25,12 @@
 - [Validation](#validation)
 - [Testing](#testing)
     - [User Story testing](#user-story-testing)
-    - [Tests on various devices](#tests-on-various-devices)
     - [Browser compatibility](#browser-compatibility)
+    - [Real-World devices](#real-world--devices)
+  - [Bugs](#bugs)
+  - [Heroku Deployment](#heroku-deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
 
 ### About
 
@@ -960,3 +964,33 @@ The following pages performance was tested with Lighthouse
 <details><summary>images</summary>
 <img src="docs/user_stories/user_story_23.png">
 </details>
+
+### Browser compatibility
+
+The website was tested for functionality in the following browsers:
+
+|**Browser**|**Result**|
+|-----------|----------|
+|Edge | working|
+|Internet Explorer | working|
+|FireFox | working|
+|Opera|working|
+|Safari|working|
+
+### Real World Devices
+
+The Site has been tested on the following real world devices:
+
+|**Browser**|**Result**|
+|-----------|----------|
+|Samsung Galaxy A01|working|
+|Standard Windows 10 Desktop PC|working|
+|Asus Laptop|working|
+
+### Bugs
+
+### Heroku Deployment
+
+### Credits
+
+### Acknowledgements
