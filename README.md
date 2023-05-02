@@ -506,14 +506,6 @@ CSS was validated using the W3C Jigsaw CSS Validation Service. No errors reporte
 <img src="docs/validation/css/w3_style.png">
 </details>
 
-### JavaScript Validation
-Javascript was validdated JSHint JS Validation Service
-No errors reported.
-
-<details><summary>script.js</summary>
-<img src="docs/validation/js/script.png">
-</details>
-
 ### PEP8 Validation
 PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle. No errors were reported.
 
@@ -605,6 +597,8 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 </details>
 
 ### WAVE TESTING
+
+### LIGHTHOUSE TESTING
 
 ##### Back to [top](#table-of-contents)<hr>
 
