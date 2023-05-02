@@ -994,3 +994,12 @@ The Site has been tested on the following real world devices:
 ### Credits
 
 ### Acknowledgements
+
+## Acknowledgements
+I would like to take the opportunity to thank:
+- My mentor Mo Shami for his feedback, advice, guidance and support.
+- My partner Geertje van der Zalm for her support, inspiration and patience.
+- My mother Anne Rijsdijk and her husband Mickel Pereira for helping me persue this dream.
+- Anyone who spends time on the internet making tutorials, awnsering questions or otherwise helping others to learn.
+
+[Back to Table Of Contents](#table-of-contents)
