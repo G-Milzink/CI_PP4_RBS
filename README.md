@@ -433,8 +433,169 @@ The wireframes were created using Balsamiq
 
 ## Validation
 
-The following files were validated using W3C Markup Validation Service:
+The pages files were validated using W3C Markup Validation Service. All pages passed with no errors.
 
 <details><summary>Home</summary>
-<img src="">
+<img src="docs/validation/html/w3_home.png">
+</details>
+
+<details><summary>Food Menu</summary>
+<img src="docs/validation/html/w3_food_menu.png">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="docs/validation/html/w3_drinks_menu.png">
+</details>
+
+<details><summary>Bites Menu</summary>
+<img src="docs/validation/html/w3_bites_menu.png">
+</details>
+
+<details><summary>Blog</summary>
+<img src="docs/validation/html/w3_blog.png">
+</details>
+
+<details><summary>Blog Detail</summary>
+<img src="docs/validation/html/w3_blog_detail.png">
+</details>
+
+<details><summary>Booking</summary>
+<img src="docs/validation/html/w3_booking.png">
+</details>
+
+<details><summary>My Bookings</summary>
+<img src="docs/validation/html/w3_my_bookings.png">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="docs/validation/html/w3_edit_booking.png">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="docs/validation/html/w3_cancel_booking.png">
+</details>
+
+<details><summary>Contact</summary>
+<img src="docs/validation/html/w3_contact.png">
+</details>
+
+<details><summary>Message Sent</summary>
+<img src="docs/validation/html/w3_contact.png">
+</details>
+
+<details><summary>Sign Up</summary>
+<img src="docs/validation/html/w3_signup.png">
+</details>
+
+<details><summary>Log In</summary>
+<img src="docs/validation/html/w3_login.png">
+</details>
+
+<details><summary>Log Out</summary>
+<img src="docs/validation/html/w3_logout.png">
+</details>
+
+### CSS Validation
+CSS was validated using the W3C Jigsaw CSS Validation Service. No errors reported.
+
+<details><summary>style.css</summary>
+<img src="docs/validation/css/w3_style.png">
+</details>
+
+### JavaScript Validation
+Javascript was validdated JSHint JS Validation Service
+No errors reported.
+
+<details><summary>script.js</summary>
+<img src="docs/validation/js/script.png">
+</details>
+
+### PEP8 Validation
+PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle. No errors were reported.
+
+<hr><summary>Home</summary><hr>
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8/home/home_admin.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8/home/home_urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8/home/home_views.png">
+</details>
+
+<hr><summary>Menu</summary><hr>
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8/menu/menu_admin.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8/menu/menu_urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8/menu/menu_views.png">
+</details>
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8/menu/menu_models.png">
+</details>
+
+<hr><summary>Blog</summary><hr>
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8/blog/blog_admin.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8/blog/blog_urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8/blog/blog_views.png">
+</details>
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8/blog/blog_models.png">
+</details>
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8/blog/blog_forms.png">
+</details>
+
+<hr><summary>Booking</summary><hr>
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8/booking/booking_admin.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8/booking/booking_urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8/booking/booking_views.png">
+</details>
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8/booking/booking_models.png">
+</details>
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8/booking/booking_forms.png">
+</details>
+
+<hr><summary>Contact</summary><hr>
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8/contact/contact_admin.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8/contact/contact_urls.png">
+</details>
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8/contact/contact_views.png">
+</details>
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8/contact/contact_models.png">
+</details>
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8/contact/contact_forms.png">
+</details>
+
+<hr><summary>Project</summary><hr>
+<details><summary>manage.py</summary>
+<img src="docs/validation/pep8/project/project_manage.png">
+</details>
+<details><summary>settings.py</summary>
+<img src="docs/validation/pep8/project/project_settings.png">
+</details>
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8/project/project_urls.png">
 </details>
