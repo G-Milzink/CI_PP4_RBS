@@ -997,13 +997,96 @@ This application has been deployed from Github using Heroku using the following 
 <details>
 <img src="docs/deployment/heroku_signup.png">
 </details>
+<br>
 
 2. Create a new app, give it an apropriate name and select your region.
 <details>
 <img src="docs/deployment/heroku_new_app_a.png">
 <img src="docs/deployment/heroku_new_app_b.png">
 </details>
+<br>
 
+3. Create an acount at elephantSQL.com and login.
+<details>
+<img src="docs/deployment/elephant_login.png">
+</details>
+<br>
+
+4. Click "Create New Instance".
+<details>
+<img src="docs/deployment/elephant_new_instance.png">
+</details>
+<br>
+
+5. Select a plan, set your region, review your settings and confirm.
+<details>
+<img src="docs/deployment/elephant_select_plan.png">
+<img src="docs/deployment/elephant_region.png">
+<img src="docs/deployment/elephant_review.png">
+</details>
+<br>
+
+5. Open your new instance and in the details section copy the database url.
+<details>
+<img src="docs/deployment/elephant_open.png">
+<img src="docs/deployment/elephant_details.png">
+</details>
+<br>
+
+6. Return to your heroku app. Under the "settings" click "reveal config vars".
+<details>
+<img src="docs/deployment/heroku_show_configvars.png">
+</details>
+<br>
+
+7. Add a new CONFIG VAR with thew following content:
+- KEY: DATABASE_URL
+- VALUE: "paste the database url you just copied here."
+<details>
+<img src="docs/deployment/heroku_empty_var.png">
+<img src="docs/deployment/heroku_add_elephant.png">
+</details>
+<br>
+
+8. Create an acount at cloudinary.com and navigate to the dashboard.
+<br>
+9. From the dashboard copy the cloudinary-url.
+<details>
+<img src="docs/deployment/cloudinary_dashboard.png">
+</details>
+<br>
+
+10. Go back to your heroku app and add a new CONFIG VAR with thew following content:
+- KEY: CLOUDINARY_URL
+- VALUE: "paste the database url you just copied here."
+<details>
+<img src="docs/deployment/heroku_add_cloudinary.png">
+</details>
+<br>
+
+11. Add the following KEY/VALUE pairs to your heroku apps "config vars":
+- KEY: PORT
+- VALUE: 8000
+<br>
+- KEY: SECRET_KEY
+- VALUE: any_string_you_want
+<details>
+<img src="docs/deployment/heroku_final_vars.png">
+</details>
+<br>
+
+13. Navigate to your heroku app's deploy tab and select GitHub as your deployment method.
+    Then search for your repository.
+<details>
+<img src="docs/deployment/heroku_deploy_method.png">
+</details>
+<br>
+
+14. Scroll down to the bottom of the page and click "deploy".
+<details>
+<img src="docs/deployment/heroku_deploy.png">
+</details>
+<br>
 
 <br>
 <hr>
