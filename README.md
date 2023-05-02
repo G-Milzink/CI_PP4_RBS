@@ -991,6 +991,22 @@ The Site has been tested on the following real world devices:
 
 ### Heroku Deployment
 
+This application has been deployed from Github using Heroku using the following steps.
+
+1. Create an acount at heroku.com.
+<details>
+<img src="docs/deployment/heroku_signup.png">
+</details>
+
+2. Create a new app, give it an apropriate name and select your region.
+<details>
+<img src="docs/deployment/heroku_new_app_a.png">
+<img src="docs/deployment/heroku_new_app_b.png">
+</details>
+
+
+<br>
+<hr>
 ### Credits
 
 ### Acknowledgements
