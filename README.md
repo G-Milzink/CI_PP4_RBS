@@ -1094,7 +1094,7 @@ This application has been deployed from Github using Heroku using the following 
 <br>
 
 ### Fork Repository
-To fork the repository by following these steps:
+You can fork the repository by following these steps:
 1. Go to the GitHub repository
 2. Click on Fork button in upper right hand corner
 <hr>
