@@ -3,7 +3,7 @@
 {% block content %}
 
 {% load crispy_forms_tags %}
-
+<!-- Detailed view of user selected blogpost -->
 <div class="col-12 mt-3 left">
     <div class="row d-flex justify-content-center">
         <div class="col-md-8">
@@ -64,6 +64,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Display comments -->
                                 <h3>Comments:</h3>
                                 <div class="card-body">
                                     {% for comment in comments %}
@@ -85,6 +86,7 @@
                                             Your comment is awaiting approval
                                         </div>
                                         {% else %}
+                                        <!-- allow commenting if user is logged in -->
                                         {% if user.is_authenticated %}
                                         <h3>Leave a comment:</h3>
                                         <p>Posting as: {{ user.username }}</p>

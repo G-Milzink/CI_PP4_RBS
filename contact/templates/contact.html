@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
-
 {% block content %}
+<!-- allow user to send a message to reastaurant staff -->
 <div class="container">
     <div class="row">
         <div class="col-md-6 mt-3 offset-md-3">
@@ -18,7 +18,7 @@
                         <a href="{% url 'account_signup' %}" class="btn btn-success">Sign Up</a>
                     </div>
                     {% else %}
-
+                    <!-- require login to send message -->
                     {% if user.is_authenticated %}
                     <div class="row text-center">
                         <div class="col-12">
@@ -52,6 +52,7 @@
                 </div>
             </div>
             <br>
+            <!-- embedded google map -->
             <div class="col-md-6 mt-3 d-inline">
                 <div class="card card_margin">
                     <div class="card-body">

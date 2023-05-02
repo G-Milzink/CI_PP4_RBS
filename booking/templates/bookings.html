@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
+<!-- allow user to make a booking when logged in -->
 <div class="container">
     <div class="row">
         <div class="col-md-6 mt-3 offset-md-3">
@@ -30,7 +31,7 @@
                     </form>
                     {% endif %}
                     {% endif %}
-                    <!-- Form Errors from stack overflow -->
+                    <!-- Form Errors (code from from stack overflow) -->
                     {% if booking_form.errors %}
                     {% for field in booking_form %}
                     {% for error in field.errors %}
