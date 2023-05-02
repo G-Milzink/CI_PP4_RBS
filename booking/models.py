@@ -31,6 +31,7 @@ status_options = (
 )
 
 
+# model for bookings
 class Booking(models.Model):
 
     booking_id = models.AutoField(primary_key=True)

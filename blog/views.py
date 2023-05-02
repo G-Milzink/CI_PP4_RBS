@@ -6,6 +6,9 @@ from .forms import CommentForm
 
 
 class PostList(generic.ListView):
+    """
+    Display a list of all blogposts
+    """
     model = Blogpost
     queryset = Blogpost.objects.filter(status=1).order_by('-created_on')
     template_name = 'blog.html'
@@ -19,7 +22,9 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
+    """
+    Display a detailed view of a specific blogpost
+    """
     def get(self, request, slug, *args, **kwargs):
         queryset = Blogpost.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -73,7 +78,9 @@ class PostDetail(View):
 
 
 class PostLike(View):
-
+    """
+    Allow user to like a blogpost
+    """
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Blogpost, slug=slug)
         if post.likes.filter(id=request.user.id).exists():

@@ -3,6 +3,7 @@ from django_summernote.admin import SummernoteModelAdmin
 from .models import FoodItem, DrinkItem, BitesItem
 
 
+# register drinkitem model with admin panel
 @admin.register(DrinkItem)
 class DrinksAdmin(SummernoteModelAdmin):
     list_display = ('item_name',
@@ -14,6 +15,7 @@ class DrinksAdmin(SummernoteModelAdmin):
     summernote_fields = ('item_description')
 
 
+# register fooditem model with admin panel
 @admin.register(FoodItem)
 class FoodAdmin(SummernoteModelAdmin):
     list_display = ('item_name',
@@ -25,6 +27,7 @@ class FoodAdmin(SummernoteModelAdmin):
     summernote_fields = ('item_description')
 
 
+# register bitesitem model with admin panel
 @admin.register(BitesItem)
 class BitesAdmin(SummernoteModelAdmin):
     list_display = ('item_name',

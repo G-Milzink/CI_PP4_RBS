@@ -3,6 +3,7 @@ from crispy_forms.helper import FormHelper
 from .models import Contact
 
 
+# form allowing users to send a message
 class ContactForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):

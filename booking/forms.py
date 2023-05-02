@@ -6,6 +6,7 @@ from phonenumber_field.formfields import PhoneNumberField
 from .models import Booking
 
 
+# form allowing users to make a booking
 class BookingForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):

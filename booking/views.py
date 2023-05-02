@@ -17,7 +17,9 @@ def get_user_instance(request):
 
 
 class Bookings(View):
-
+    """
+    Display booking form and allow user to make a booking
+    """
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
             email = request.user.email
@@ -41,7 +43,9 @@ class Bookings(View):
 
 
 class Received(generic.DetailView):
-
+    """
+    Notify user that booking has been recieved
+    """
     def get(self, request):
         return render(request, 'received.html')
 

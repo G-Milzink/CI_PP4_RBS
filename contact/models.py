@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+# contact model
 class Contact(models.Model):
     message_id = models.AutoField(primary_key=True)
     created_on = models.DateTimeField(auto_now_add=True)

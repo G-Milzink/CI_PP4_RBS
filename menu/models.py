@@ -14,6 +14,7 @@ BITES_CATEGORY = ((0, "New"),
                   (2, 'Vegetarian'))
 
 
+# food item model
 class FoodItem(models.Model):
 
     item_id = models.AutoField(primary_key=True)
@@ -30,6 +31,7 @@ class FoodItem(models.Model):
         return self.item_name
 
 
+# drinks item model
 class DrinkItem(models.Model):
 
     item_id = models.AutoField(primary_key=True)
@@ -46,6 +48,7 @@ class DrinkItem(models.Model):
         return self.item_name
 
 
+# bites item model
 class BitesItem(models.Model):
 
     item_id = models.AutoField(primary_key=True)
