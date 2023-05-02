@@ -106,6 +106,12 @@ Wine & Vinegar is a fictional restaurant. The website provides users the abillit
 ##### Back to [top](#table-of-contents)
 
 ## Design
+- GitHub issues was used to track all open user stories
+- Epics were created using the milestones feature.
+<details>
+<img src="docs/agile/user_stories.png">
+img src="docs/agile/milestones.png">
+</details>
 
 ### Colours
 
