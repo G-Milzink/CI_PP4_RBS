@@ -27,7 +27,6 @@
     - [User Story testing](#user-story-testing)
     - [Browser compatibility](#browser-compatibility)
     - [Real-World devices](#real-world--devices)
-  - [Bugs](#bugs)
   - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
   - [Acknowledgements](#acknowledgements)
@@ -987,7 +986,7 @@ The Site has been tested on the following real world devices:
 |Standard Windows 10 Desktop PC|working|
 |Asus Laptop|working|
 
-### Bugs
+##### Back to [top](#table-of-contents)<hr>
 
 ### Heroku Deployment
 
@@ -1094,9 +1093,32 @@ This application has been deployed from Github using Heroku using the following 
 </details>
 <br>
 
-<br>
+### Fork Repository
+To fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
 <hr>
+
+### Clone Repository
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
+
 ### Credits
+
+### Images
+
+Images used were sourced from Unsplash.com.
+Blog articles used were sourced from "Resell Rights Weekly"
+
+### Code
+
+Bootstrap navbar, carousel and classes were used.
 
 ### Acknowledgements
 
