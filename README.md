@@ -233,6 +233,34 @@ The Contact Model contains the following:
 - name
 - email
 
+### Wireframes
+The wireframes were created using Balsamiq
+<details><summary>Home</summary>
+<img src="docs/wireframes/wf_home.png">
+</details>
+<details><summary>Menu</summary>
+<img src="docs/wireframes/wf_menu.png">
+</details>
+<details><summary>Blog</summary>
+<img src="docs/wireframes/wf_blog.png">
+</details>
+<details><summary>Blog Detail</summary>
+<img src="docs/wireframes/wf_blog_detail.png">
+</details>
+<details><summary>Booking</summary>
+<img src="docs/wireframes/wf_booking.png">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/wireframes/wf_contact.png">
+</details>
+<details><summary>SignUp</summary>
+<img src="docs/wireframes/wf_signup.png">
+</details>
+<details><summary>LogIn</summary>
+<img src="docs/wireframes/wf_login.png">
+</details>
+<br>
+
 ## Technologies Used
 
 ### Languages & Frameworks
