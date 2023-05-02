@@ -99,3 +99,9 @@ a:hover {
 .btn {
     color: black;
 }
+
+.btn-success {
+    background-color: darkgreen;
+    border-color: darkgreen;
+    color: bisque;
+}
