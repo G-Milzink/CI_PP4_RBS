@@ -660,10 +660,42 @@ No errors were reported.
 
 ### LIGHTHOUSE TESTING
 
-##### Back to [top](#table-of-contents)<hr>
+The following pages performance was tested with Lighthouse
+
+<details><summary>Home</summary>
+<img src="docs/validation/lighthouse/lighthouse_home.png">
+</details>
+<details><summary>Menu</summary>
+<img src="docs/validation/lighthouse/lighthouse_menu.png">
+</details>
+<details><summary>Blog</summary>
+<img src="docs/validation/lighthouse/lighthouse_blog.png">
+</details>
+<details><summary>Blog Detail</summary>
+<img src="docs/validation/lighthouse/lighthouse_blog_detail.png">
+</details>
+<details><summary>Booking</summary>
+<img src="docs/validation/lighthouse/lighthouse_booking.png">
+</details>
+<details><summary>Booking List</summary>
+<img src="docs/validation/lighthouse/lighthouse_booking_list.png">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/validation/lighthouse/lighthouse_contact.png">
+</details>
+<details><summary>SignUp</summary>
+<img src="docs/validation/lighthouse/lighthouse_signup.png">
+</details>
+<details><summary>LogIn</summary>
+<img src="docs/validation/lighthouse/lighthouse_login.png">
+</details>
+<details><summary>LogOut</summary>
+<img src="docs/validation/lighthouse/lighthouse_logout.png">
+</details>
+
 <br>
 
-
+##### Back to [top](#table-of-contents)<hr>
 
 ## Testing
 
