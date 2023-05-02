@@ -104,7 +104,13 @@
   <!-- bootstrap 5.2.3: -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
   <!-- alert message timeout script -->
-  <script src="{% static 'js/script.js' %}"></script>
+  <script>
+    setTimeout(function () {
+    let messages = document.getElementById("msg");
+    let alert = new bootstrap.Alert(messages);
+    alert.close();
+  }, 1500);
+  </script>
 </body>
 
 </html>
