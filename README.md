@@ -597,10 +597,73 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 </details>
 
 ### WAVE TESTING
+The following pages were tested with WAVE
+No errors were reported.
+
+<details><summary>Home</summary>
+<img src="docs/validation/wave/wave_home.png">
+</details>
+<br>
+<details><summary>Food Menu</summary>
+<img src="docs/validation/wave/wave_food_menu.png">
+</details>
+<details><summary>Drinks Menu</summary>
+<img src="docs/validation/wave/wave_drinks_menu.png">
+</details>
+<details><summary>Bites Menu</summary>
+<img src="docs/validation/wave/wave_bites_menu.png">
+</details>
+<br>
+<details><summary>Blog</summary>
+<img src="docs/validation/wave/wave_blog.png">
+</details>
+<details><summary>Blog Detail</summary>
+<img src="docs/validation/wave/wave_blog_detail.png">
+</details>
+<br>
+<details><summary>Booking Login</summary>
+<img src="docs/validation/wave/wave_booking_login.png">
+</details>
+<details><summary>Booking New</summary>
+<img src="docs/validation/wave/wave_booking_new.png">
+</details>
+<details><summary>Booking List</summary>
+<img src="docs/validation/wave/wave_booking_list.png">
+</details>
+<details><summary>Booking Edit</summary>
+<img src="docs/validation/wave/wave_booking_edit.png">
+</details>
+<details><summary>Booking Cancel</summary>
+<img src="docs/validation/wave/wave_booking_cancel.png">
+</details>
+<br>
+<details><summary>Contact Login</summary>
+<img src="docs/validation/wave/wave_contact_login.png">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/validation/wave/wave_contact.png">
+</details>
+<details><summary>Contact Sent</summary>
+<img src="docs/validation/wave/wave_contact_sent.png">
+</details>
+<br>
+<details><summary>SignUp</summary>
+<img src="docs/validation/wave/wave_signup.png">
+</details>
+<details><summary>Login</summary>
+<img src="docs/validation/wave/wave_login.png">
+</details>
+<details><summary>Login</summary>
+<img src="docs/validation/wave/wave_logout.png">
+</details>
+<br>
 
 ### LIGHTHOUSE TESTING
 
 ##### Back to [top](#table-of-contents)<hr>
+<br>
+
+
 
 ## Testing
 
