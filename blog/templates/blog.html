@@ -26,9 +26,9 @@
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr>
-                            <p class="card-text text-muted h5">{{ post.created_on}} </p>
+                            <p class="card-text">{{ post.created_on}} </p>
                             {% if post.number_of_likes >= 1 %}
-                            <p class="card-text text-muted h5"><i class="fa-regular fa-heart"
+                            <p class="card-text"><i class="fa-regular fa-heart"
                                     style="color: #ff0000"></i>
                                 {{ post.number_of_likes }}</p>
                             {% else %}
