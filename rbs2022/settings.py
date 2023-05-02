@@ -107,17 +107,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'rbs2022.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
      'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
  }
@@ -176,12 +165,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # SMTP Configuraion
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('MY_EMAIL_ADRESS')
-EMAIL_HOST_PASSWORD = os.environ.get('MY_GMAIL_APP_PASSWORD')
-
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
