@@ -1082,9 +1082,15 @@ This application has been deployed from Github using Heroku using the following 
 </details>
 <br>
 
-14. Scroll down to the bottom of the page and click "deploy".
+14. Scroll down to the bottom of the page and click "deploy branch".
 <details>
 <img src="docs/deployment/heroku_deploy.png">
+</details>
+<br>
+
+15. Once the build is complete click "view".
+<details>
+<img src="docs/deployment/heroku_open_app.png">
 </details>
 <br>
 
