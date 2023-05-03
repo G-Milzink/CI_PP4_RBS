@@ -69,35 +69,36 @@ Wine & Vinegar is a fictional restaurant. The website provides users the abillit
 
 ### Site Owner 
 
-1. As site owner I want the site to be fully responsive so that I can provide a good user experience.
-2. As site owner I want to provide a contact page so that users can find/contact the restaurant easily.
-3. As site owner I want users to be able to view the menu so that they can easily ddecide wether or not to book with us.
-4. As site owner I want users to be able to book a table online.
-5. as site owner I want to be able to maintain a blog so that users can be informed about the goings on in the restaureant.
+1. As site owner I want the site to be fully responsive so that I can provide a good user experience. (Must Have)
+2. As site owner I want to provide a contact page so that users can find/contact the restaurant easily. (Must Have)
+3. As site owner I want users to be able to view the menu so that they can easily ddecide wether or not to book with us.(Must Have)
+4. As site owner I want users to be able to book a table online. (Must Have)
+5. as site owner I want to be able to maintain a blog so that users can be informed about the goings on in the restaureant. (Must Have)
 
 ### Admin
 
-6. As site admin I want to be able to login so that I can acces the backend of the site.
-7. As site admin I want to be able to view/make changes to the menus so that I can keep it up to date.
-8. As site admin I want to be able confirm or reject a booking so that I can avoid double bookings.
-9. As site admin I want to be able to manually enter a booking so that I can book a table in response to a user's phonecall or email.
-10. As site admin I want to be able to post articles to the blog so that I can maintain customer communication.
-11. As site admin I want to be able to approve blog-comments so that I can make sure nothing innaprorpiate is displayed.
-12. As site admin I want to be able to filter bookings by date so that I can see wich bookings we have for a partivular day.
+6. As site admin I want to be able to login so that I can acces the backend of the site. (Must Have)
+7. As site admin I want to be able to view/make changes to the menus so that I can keep it up to date. (Must Have)
+8. As site admin I want to be able confirm or reject a booking so that I can avoid double bookings. (Must Have)
+9. As site admin I want to be able to manually enter a booking so that I can book a table in response to a user's phonecall or email. (Must Have)
+10. As site admin I want to be able to post articles to the blog so that I can maintain customer communication. (Must Have)
+11. As site admin I want to be able to approve blog-comments so that I can make sure nothing innaprorpiate is displayed. (Must Have)
+12. As site admin I want to be able to filter bookings by date so that I can see wich bookings we have for a particular day. (Must Have)
+13. As site admin I want to be able to add a registered user to "staff" so they can acces the site's backend.  (Must Have)
 
 ### Users
 
-13. As site user I want to be able to easily navigate the site to find the information I am looking for.
-14. As site user I want to be able to view the menu.
-15. As site user I want to be able to easily contact the restaurant.
-16. As site user I want to be able to be able to see the restaurants opening times and location.
-17. As site user I want to be able to get a sense of the atmosphere in the restaurant.
-18. As site user I want to be able to login so that I can book a table.
-19. As site user I want to be able to view previous bookings. 
-20. As site user I want to be able to edit an unconfirmed booking.
-21. As site user I want to be able to cancel a booking.
-22. As site user I want to be able to comment on/like a blogpost so that I can communicate what I think of the content.
-23. As site user I want to be able to get confirmation of any action I take so that I know it was successfull.
+14. As site user I want to be able to easily navigate the site to find the information I am looking for. (Must Have)
+15. As site user I want to be able to view the menu. (Must Have)
+16. As site user I want to be able to easily contact the restaurant. (Must Have)
+17. As site user I want to be able to be able to see the restaurants opening times and location. (Must Have)
+18. As site user I want to be able to get a sense of the atmosphere in the restaurant. (Must Have)
+19. As site user I want to be able to login so that I can book a table. (Must Have)
+20. As site user I want to be able to view previous bookings. (Should Have)
+21. As site user I want to be able to edit an unconfirmed booking.  (Should Have)
+22. As site user I want to be able to cancel a booking. (Should Have)
+23. As site user I want to be able to comment on/like a blogpost so that I can communicate what I think of the content. (Should Have)
+24. As site user I want to be able to get confirmation of any action I take so that I know it was successfull. (Should Have)
 
 ### Epics
 
@@ -782,6 +783,7 @@ The following pages performance was tested with Lighthouse
 
 <details><summary>images</summary>
 <img src="docs/user_stories/user_story_6.png">
+<img src="docs/user_stories/acces_admin.png">
 </details>
 
 7. As site admin I want to be able to view/make changes to the menus so that I can keep it up to date.
@@ -847,7 +849,19 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_12.png">
 </details>
 
-13. As site user I want to be able to easily navigate the site to find the information I am looking for.
+13. As site admin I want to be able to add a registered user to "staff" so they can acces the site's backend.  (Must Have)
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Admin Panel|navigate to admin panel|find Users Section section|Works as expected|
+
+<details><summary>images</summary>
+<img src="docs/user_stories/change_user_role_a.png">
+<img src="docs/user_stories/change_user_role_b.png">
+<img src="docs/user_stories/change_user_role_c.png">
+</details>
+
+
+14. As site user I want to be able to easily navigate the site to find the information I am looking for.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -863,7 +877,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_13g.png">
 </details>
 
-14. As site user I want to be able to view the menu.
+15. As site user I want to be able to view the menu.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -873,7 +887,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_13b.png">
 </details>
 
-15. As site user I want to be able to easily contact the restaurant.
+16. As site user I want to be able to easily contact the restaurant.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |Navigation Bar|Click apropriate link|find contact page|Works as expected|
@@ -882,7 +896,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_13e.png">
 </details>
 
-16. As site user I want to be able to be able to see the restaurants opening times and location.
+17. As site user I want to be able to be able to see the restaurants opening times and location.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -892,7 +906,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_16.png">
 </details>
 
-17. As site user I want to be able to get a sense of the atmosphere in the restaurant.
+18. As site user I want to be able to get a sense of the atmosphere in the restaurant.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -904,7 +918,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_17c.png">
 </details>
 
-18. As site user I want to be able to login so that I can book a table.
+19. As site user I want to be able to login so that I can book a table.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -916,7 +930,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_13d.png">
 </details>
 
-19. As site user I want to be able to view previous bookings. 
+20. As site user I want to be able to view previous bookings. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -928,7 +942,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_19b.png">
 </details>
 
-20. As site user I want to be able to edit an unconfirmed booking.
+21. As site user I want to be able to edit an unconfirmed booking.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -938,7 +952,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_20.png">
 </details>
 
-21. As site user I want to be able to cancel a booking.
+22. As site user I want to be able to cancel a booking.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -948,7 +962,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_21.png">
 </details>
 
-22. As site user I want to be able to comment on/like a blogpost so that I can communicate what I think of the content.
+23. As site user I want to be able to comment on/like a blogpost so that I can communicate what I think of the content.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -960,7 +974,7 @@ The following pages performance was tested with Lighthouse
 <img src="docs/user_stories/user_story_22b.png">
 </details>
 
-23. As site user I want to be able to get confirmation of any action I take so that I know it was successfull.
+24. As site user I want to be able to get confirmation of any action I take so that I know it was successfull.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
