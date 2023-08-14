@@ -17,19 +17,19 @@
 }
 
 body {
-    background-color: #2a5062;
+    background-color: #336177;
     color: #ffe4c4;
     font-family: 'Domine', serif;
     
 }
 
 .navbar {
-    color: rgb(255, 0, 0);
     font-size: 180%;
+    color: black;
 }
 
 .nav-link:hover{
-    color: rgb(21, 21, 21);
+    color: #ffe4c4;
 }
 
 /* overall styling */
