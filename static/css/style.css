@@ -18,7 +18,7 @@
 
 body {
     background-color: #2a5062;
-    color: bisque;
+    color: #ffe4c4;
     font-family: 'Domine', serif;
     
 }
@@ -35,7 +35,7 @@ body {
 /* overall styling */
 
 .card {
-    background-color: #494A3F;
+    background-color: #2e2f27;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
 }
@@ -52,7 +52,7 @@ body {
 
 .blog-content {
     background-color: #2e2f27;
-    color: bisque;
+    color: #ffe4c4;
 }
 
 .home_images {
@@ -103,5 +103,5 @@ a:hover {
 .btn-success {
     background-color: darkgreen;
     border-color: darkgreen;
-    color: bisque;
+    color: #ffe4c4;
 }
