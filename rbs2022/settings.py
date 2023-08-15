@@ -33,7 +33,7 @@ DEBUG = os.environ.get("DEV", False)
 
 ALLOWED_HOSTS = ['.herokuapp.com',
                  'localhost',
-                 '8000-gmilzink-cipp4rbs-oc9b5xvz99i.ws-eu103.gitpod.io']
+                 '8000-gmilzink-cipp4rbs-er6cvfzk61j.ws-eu103.gitpod.io']
 
 X_FRAMEOPTIONS = 'SAMEORIGIN'
 
@@ -109,9 +109,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'rbs2022.wsgi.application'
 
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+if 'DEV' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+else:
+    print('connected')
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
