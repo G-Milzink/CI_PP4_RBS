@@ -109,10 +109,12 @@
   <!-- alert message timeout script -->
   <script>
     setTimeout(function () {
-    let messages = document.getElementById("msg");
-    let alert = new bootstrap.Alert(messages);
-    alert.close();
-  }, 1500);
+      let messages = document.getElementById("msg");
+      if (messages !== null) {
+        let alert = new bootstrap.Alert(messages);
+        alert.close();
+      }
+    }, 1500);
   </script>
 </body>
 
