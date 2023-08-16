@@ -1,7 +1,9 @@
+# Third party imports:
 from django.shortcuts import render
 from django.views import View
 from django.contrib.auth.models import User
 from django.contrib import messages
+# Internal imports:
 from .forms import ContactForm
 
 

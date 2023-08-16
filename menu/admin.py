@@ -1,11 +1,15 @@
+# Third party imports:
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
+# Internal imports:
 from .models import FoodItem, DrinkItem, BitesItem
 
 
-# register drinkitem model with admin panel
 @admin.register(DrinkItem)
 class DrinksAdmin(SummernoteModelAdmin):
+    """
+    register drinkitem model with admin panel
+    """
     list_display = ('item_name',
                     'item_category',
                     'item_price',
@@ -15,9 +19,11 @@ class DrinksAdmin(SummernoteModelAdmin):
     summernote_fields = ('item_description')
 
 
-# register fooditem model with admin panel
 @admin.register(FoodItem)
 class FoodAdmin(SummernoteModelAdmin):
+    """
+    register fooditem model with admin panel
+    """
     list_display = ('item_name',
                     'item_category',
                     'item_price',
@@ -27,9 +33,11 @@ class FoodAdmin(SummernoteModelAdmin):
     summernote_fields = ('item_description')
 
 
-# register bitesitem model with admin panel
 @admin.register(BitesItem)
 class BitesAdmin(SummernoteModelAdmin):
+    """
+    register fooditem model with admin panel
+    """
     list_display = ('item_name',
                     'item_category',
                     'item_price',

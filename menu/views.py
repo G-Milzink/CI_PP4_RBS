@@ -1,4 +1,6 @@
+# Third party imports:
 from django.shortcuts import render
+# Internal imports:
 from .models import FoodItem, DrinkItem, BitesItem
 
 

@@ -1,6 +1,9 @@
+# Third party imports:
 from django.db import models
 
 
+# Categories for food, drink and bites items.
+# items in the "new" category are not visible on the website.
 FOOD_CATEGORY = ((0, 'New'),
                  (1, 'Starters'),
                  (2, 'Mains'),
@@ -14,9 +17,10 @@ BITES_CATEGORY = ((0, "New"),
                   (2, 'Vegetarian'))
 
 
-# food item model
 class FoodItem(models.Model):
-
+    """
+    class for the FoodItem database model
+    """
     item_id = models.AutoField(primary_key=True)
     item_name = models.CharField(max_length=50, unique=True)
     item_description = models.CharField(max_length=250, unique=True)
@@ -31,9 +35,10 @@ class FoodItem(models.Model):
         return self.item_name
 
 
-# drinks item model
 class DrinkItem(models.Model):
-
+    """
+    class for the DrinkItem database model
+    """
     item_id = models.AutoField(primary_key=True)
     item_name = models.CharField(max_length=50, unique=True)
     item_description = models.CharField(max_length=250, unique=True)
@@ -48,9 +53,10 @@ class DrinkItem(models.Model):
         return self.item_name
 
 
-# bites item model
 class BitesItem(models.Model):
-
+    """
+    class for the BitesItem database model
+    """
     item_id = models.AutoField(primary_key=True)
     item_name = models.CharField(max_length=50, unique=True)
     item_description = models.CharField(max_length=250, unique=True)

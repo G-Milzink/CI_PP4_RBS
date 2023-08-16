@@ -1,13 +1,17 @@
+# Third party imports:
 from django import forms
 from datetime import datetime
 from datetime import date
 from crispy_forms.helper import FormHelper
 from phonenumber_field.formfields import PhoneNumberField
+# Internal imports:
 from .models import Booking
 
 
-# form allowing users to make a booking
 class BookingForm(forms.ModelForm):
+    """
+    form allowing users to make a booking.
+    """
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

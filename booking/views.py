@@ -1,16 +1,20 @@
+# Third party imports:
 from django.shortcuts import render, redirect, reverse
 from django.contrib.auth.models import User
 from django.views import generic, View
 from django.contrib import messages
-import datetime
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
+import datetime
+# Internal imports:
 from .models import Booking
 from .forms import BookingForm
 
 
 def get_user_instance(request):
-
+    """
+    retrieves users details when logged in
+    """
     user_email = request.user.email
     user = User.objects.filter(email=user_email).first()
     return user
@@ -18,7 +22,7 @@ def get_user_instance(request):
 
 class Bookings(View):
     """
-    Display booking form and allow user to make a booking
+    Display booking form and allow logged in user to make a booking
     """
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
@@ -51,7 +55,9 @@ class Received(generic.DetailView):
 
 
 class AllMyBookings(generic.ListView):
-
+    """
+    Display all bookings made by a specific user.
+    """
     model = Booking
 
     def get(self, request, *args, **kwargs):
@@ -78,7 +84,9 @@ class AllMyBookings(generic.ListView):
 
 
 class EditBooking(SuccessMessageMixin, UpdateView):
-
+    """
+    Retrieve a booking by PK so the user can edit it.
+    """
     model = Booking
     form_class = BookingForm
     template_name = 'edit_booking.html'
@@ -89,9 +97,10 @@ class EditBooking(SuccessMessageMixin, UpdateView):
 
 
 def cancel_booking(request, pk):
-
+    """
+    Delete a booking by PK so the user can cancel a booking.
+    """
     booking = Booking.objects.get(pk=pk)
-
     if request.method == 'POST':
         booking.delete()
         messages.success(request, "Booking cancelled")

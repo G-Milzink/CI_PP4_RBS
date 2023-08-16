@@ -1,6 +1,8 @@
+# Third party imports:
 from django.contrib import admin
-from .models import Blogpost, Comment
 from django_summernote.admin import SummernoteModelAdmin
+# Internal imports:
+from .models import Blogpost, Comment
 
 
 @admin.register(Blogpost)
